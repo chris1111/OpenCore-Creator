@@ -3,6 +3,7 @@
 #### Credit: ☞ [acidanthera](https://github.com/acidanthera)
 #### Download Release ☞ [OpenCore Creator.dmg ](https://github.com/chris1111/OpenCore-Creator/releases/tag/V1)
 
+#### Open .dmg image then Move the App on Desktop
 ![Webp net-gifmaker](https://user-images.githubusercontent.com/6248794/88553305-200dcf80-cff3-11ea-97f6-c3dba49d363d.gif)
 
 ![Capture 0](https://user-images.githubusercontent.com/6248794/88550729-fef7af80-cfef-11ea-83e6-af116472889f.png)
