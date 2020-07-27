@@ -1,4 +1,5 @@
 ## OpenCore-Creator
+- An easy builder of OpenCore and VirtualSMC
 #### Credit: ☞ [acidanthera](https://github.com/acidanthera)
 
 ![Capture 0](https://user-images.githubusercontent.com/6248794/88550729-fef7af80-cfef-11ea-83e6-af116472889f.png)
