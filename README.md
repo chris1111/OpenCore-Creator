@@ -1,6 +1,6 @@
 ## OpenCore-Creator
 - An easy builder of OpenCore and VirtualSMC
-- Everything is create on a RANDISK no fille on the system exepted nasm, the output is move on Desktop.
+- Everything is create on a RAMDISK no fille on the system exepted nasm, the output is move on Desktop.
 #### Credit: ☞ [acidanthera](https://github.com/acidanthera)
 #### Download Release ☞ [OpenCore Creator.dmg ](https://github.com/chris1111/OpenCore-Creator/releases/tag/V1)
 
