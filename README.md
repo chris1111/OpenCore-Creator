@@ -1,4 +1,6 @@
 ## OpenCore-Creator
+- Update 02 August 2020 Add option V to see OpenCore Commits
+
 - An easy builder of OpenCore and VirtualSMC
 - Everything is create on a RAMDISK no fille on the system exepted nasm, the output is move on Desktop.
 - Works in macOS Catalina 10.15, for the moment it does not work correctly on macOS Big Sur 11 Beta
@@ -15,6 +17,7 @@
 ### How to Build
 - Type 1 for build OpenCore
 - Type 2 for build package Virtualsmc
-- Type 3 for EXIT
+- Type V for See OpenCore Commits
+- Type X for EXIT
 
-![Capture 2](https://user-images.githubusercontent.com/6248794/88550518-b93ae700-cfef-11ea-97ad-62009e7d2d90.png)
+![Capture d’écran, le 2020-08-02 à 19 00 36](https://user-images.githubusercontent.com/6248794/89134373-a8f4a180-d4f2-11ea-8b1d-c2ca1b10ff97.png)
