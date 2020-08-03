@@ -1,5 +1,5 @@
 ## OpenCore-Creator
-- Update 02 August 2020 Add option V to see OpenCore Commits, add WhateverGreen to the build Package-VSMC
+- Update 02 August 2020 Add option V to see OpenCore Commits, add aslo WhateverGreen to the build Package-VSMC
 
 - An easy builder of OpenCore and VirtualSMC
 - Everything is create on a RAMDISK no fille on the system exepted nasm, the output is move on Desktop.
