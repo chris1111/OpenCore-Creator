@@ -1,11 +1,12 @@
 ## OpenCore-Creator
+- Latest Update: Release V2  24 Sept 2020 Fix compilation with Xcode 12
 - Update 02 August 2020 Add option V to see OpenCore Commits, add aslo WhateverGreen to the build Package-VSMC
 
 - An easy builder of OpenCore and VirtualSMC
 - Everything is create on a RAMDISK no fille on the system exepted nasm, the output is move on Desktop.
 - Works in macOS Catalina 10.15, for the moment it does not work correctly on macOS Big Sur 11 Beta
 #### Credit: ☞ [acidanthera](https://github.com/acidanthera)
-#### Download Release ☞ [OpenCore Creator.dmg ](https://github.com/chris1111/OpenCore-Creator/releases/tag/V1)
+#### Download Release V2 ☞ [OpenCore Creator.dmg ](https://github.com/chris1111/OpenCore-Creator/releases/tag/V2)
 
 #### Open .dmg image then Move the App on Desktop
 ![Webp net-gifmaker](https://user-images.githubusercontent.com/6248794/88553305-200dcf80-cff3-11ea-97f6-c3dba49d363d.gif)
