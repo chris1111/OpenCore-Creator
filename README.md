@@ -2,7 +2,7 @@
 - Latest Update: Release V  23 Nov 2020 Compile more kext
 - List of kexts:⬇︎
 
--- AirportBrcmFixup.kext
+- AirportBrcmFixup.kext
 . AppleALC.kext
 . BrcmBluetoothInjector.kext
 . BrcmFirmwareData.kext
