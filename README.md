@@ -1,29 +1,29 @@
 ## OpenCore-Creator
 - Latest Update: Release V  23 Nov 2020 Compile more kext
-- List of kexts:⬇︎
+### List of kexts:⬇︎
 
 - AirportBrcmFixup.kext
-. AppleALC.kext
-. BrcmBluetoothInjector.kext
-. BrcmFirmwareData.kext
-. BrcmFirmwareRepo.kext
-. BrcmNonPatchRAM.kext
-. BrcmNonPatchRAM2.kext
-. BrcmPatchRAM.kext
-. BrcmPatchRAM2.kext
-. BrcmPatchRAM3.kext
-. BrightnessKeys.kext
-. IntelMausi.kext
-. Lilu.kext
-. NVMeFix.kext
-. SMCBatteryManager.kext
-. SMCDellSensors.kext
-. SMCLightSensor.kext
-. SMCProcessor.kext
-. SMCSuperIO.kext
-. VirtualSMC.kext
-. VoodooPS2Controller.kext
-. WhateverGreen.kext
+- AppleALC.kext
+- BrcmBluetoothInjector.kext
+- BrcmFirmwareData.kext
+- BrcmFirmwareRepo.kext
+- BrcmNonPatchRAM.kext
+- BrcmNonPatchRAM2.kext
+- BrcmPatchRAM.kext
+- BrcmPatchRAM2.kext
+- BrcmPatchRAM3.kext
+- BrightnessKeys.kext
+- IntelMausi.kext
+- Lilu.kext
+- NVMeFix.kext
+- SMCBatteryManager.kext
+- SMCDellSensors.kext
+- SMCLightSensor.kext
+- SMCProcessor.kext
+- SMCSuperIO.kext
+- VirtualSMC.kext
+- VoodooPS2Controller.kext
+- WhateverGreen.kext
 
 - Update 02 August 2020 Add option V to see OpenCore Commits, add aslo WhateverGreen to the build Package-VSMC
 
