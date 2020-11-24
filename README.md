@@ -31,7 +31,7 @@
 - Everything is create on a RAMDISK no fille on the system exepted nasm, the output is move on Desktop.
 - Works in macOS Catalina 10.15, for the moment it does not work correctly on macOS Big Sur 11 Beta
 #### Credit: ☞ [acidanthera](https://github.com/acidanthera)
-#### Download Release V ☞ [OpenCore Creator-V3.dmg ](https://github.com/chris1111/OpenCore-Creator/releases/tag/V3)
+#### Download Release V3 ☞ [OpenCore Creator-V3.dmg ](https://github.com/chris1111/OpenCore-Creator/releases/tag/V3)
 
 #### Open .dmg image then Move the App on Desktop
 ![Webp net-gifmaker](https://user-images.githubusercontent.com/6248794/88553305-200dcf80-cff3-11ea-97f6-c3dba49d363d.gif)
