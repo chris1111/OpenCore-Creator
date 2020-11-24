@@ -1,12 +1,36 @@
 ## OpenCore-Creator
-- Latest Update: Release V2  24 Sept 2020 Fix compilation with Xcode 12
+- Latest Update: Release V  23 Nov 2020 Compile more kext
+- List of kexts
+AirportBrcmFixup.kext
+AppleALC.kext
+BrcmBluetoothInjector.kext
+BrcmFirmwareData.kext
+BrcmFirmwareRepo.kext
+BrcmNonPatchRAM.kext
+BrcmNonPatchRAM2.kext
+BrcmPatchRAM.kext
+BrcmPatchRAM2.kext
+BrcmPatchRAM3.kext
+BrightnessKeys.kext
+IntelMausi.kext
+Lilu.kext
+NVMeFix.kext
+SMCBatteryManager.kext
+SMCDellSensors.kext
+SMCLightSensor.kext
+SMCProcessor.kext
+SMCSuperIO.kext
+VirtualSMC.kext
+VoodooPS2Controller.kext
+WhateverGreen.kext
+
 - Update 02 August 2020 Add option V to see OpenCore Commits, add aslo WhateverGreen to the build Package-VSMC
 
 - An easy builder of OpenCore and VirtualSMC
 - Everything is create on a RAMDISK no fille on the system exepted nasm, the output is move on Desktop.
 - Works in macOS Catalina 10.15, for the moment it does not work correctly on macOS Big Sur 11 Beta
 #### Credit: ☞ [acidanthera](https://github.com/acidanthera)
-#### Download Release V2 ☞ [OpenCore Creator.dmg ](https://github.com/chris1111/OpenCore-Creator/releases/tag/V2)
+#### Download Release V ☞ [OpenCore Creator-V3.dmg ](https://github.com/chris1111/OpenCore-Creator/releases/tag/V3)
 
 #### Open .dmg image then Move the App on Desktop
 ![Webp net-gifmaker](https://user-images.githubusercontent.com/6248794/88553305-200dcf80-cff3-11ea-97f6-c3dba49d363d.gif)
