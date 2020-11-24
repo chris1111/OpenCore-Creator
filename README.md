@@ -25,9 +25,8 @@
 - VoodooPS2Controller.kext
 - WhateverGreen.kext
 
-- Update 02 August 2020 Add option V to see OpenCore Commits, add aslo WhateverGreen to the build Package-VSMC
 
-- An easy builder of OpenCore and VirtualSMC
+- An easy builder of OpenCore (VirtualSMC / Other kext)
 - Everything is create on a RAMDISK no fille on the system exepted nasm, the output is move on Desktop.
 - Works in macOS Catalina 10.15, for the moment it does not work correctly on macOS Big Sur 11 Beta
 #### Credit: ☞ [acidanthera](https://github.com/acidanthera)
