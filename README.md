@@ -1,4 +1,5 @@
 ## OpenCore-Creator
+### You need Command Line Tool and Xcode installed to using this.
 - Latest Update: Release V  23 Nov 2020 Compile more kext
 ### List of kexts:⬇︎
 
