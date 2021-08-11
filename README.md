@@ -1,5 +1,7 @@
 ## OpenCore-Creator
 ### You need Command Line Tool and Xcode installed to using this.
+- Download Command Line tool : Terminal ➲ xcode-select --install
+- Download Xcode : Terminal ➲ gcc
 - Latest Update: Release V-3 Nov 2020 Compile more kext
 ### List of kexts:⬇︎
 
