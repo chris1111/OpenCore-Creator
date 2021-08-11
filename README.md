@@ -35,7 +35,7 @@
 - NOTE: Make sur Desktop/OpenCore folder not exist because the script will delete it and replace; if you have it rename or move it.
 
 #### Credit: ☞ [acidanthera](https://github.com/acidanthera)
-#### Download Release V3 ☞ [OpenCore Creator-V3.dmg ](https://github.com/chris1111/OpenCore-Creator/releases/tag/V3)
+#### Download Release V4 ☞ [OpenCore Creator-V4.dmg ](https://github.com/chris1111/OpenCore-Creator/releases/tag/V4)
 
 #### Open .dmg image then Move the App on Desktop
 ![Webp net-gifmaker](https://user-images.githubusercontent.com/6248794/88553305-200dcf80-cff3-11ea-97f6-c3dba49d363d.gif)
