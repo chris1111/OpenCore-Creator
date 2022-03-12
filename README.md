@@ -2,7 +2,7 @@
 ### You need Command Line Tool and Xcode installed to using this.
 - Download Command Line tool : Terminal ➲ xcode-select --install
 - Download Xcode : Terminal ➲ gcc
-- Latest Update: 12 Mar 2022 add Option 2 and 3 to make OpenCore Update, 
+- Latest Update 12 Mar 2022 add Option 2 and 3 to make OpenCore Update, 
 - Option 5 OpenCore Package, Option P Terminal Profiles
 ### List of kexts:⬇︎
 
@@ -41,7 +41,7 @@
 - Terminal Profiler is now Included [Terminal Profiler](https://github.com/chris1111/Terminal-Profiler)
 
 #### Credit: ☞ [acidanthera](https://github.com/acidanthera)
-#### Download Release V4 ☞ [OpenCore Creator-V5.dmg ](https://github.com/chris1111/OpenCore-Creator/releases/tag/V5)
+#### Download Release V5 ☞ [OpenCore Creator-V5.dmg ](https://github.com/chris1111/OpenCore-Creator/releases/tag/V5)
 
 #### Move the App on Desktop
 ![Webp net-gifmaker](https://user-images.githubusercontent.com/6248794/88553305-200dcf80-cff3-11ea-97f6-c3dba49d363d.gif)
