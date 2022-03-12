@@ -1,8 +1,12 @@
 ## OpenCore-Creator
-### You need Command Line Tool and Xcode installed to using this.
-- Download Command Line tool : Terminal ➲ xcode-select --install
-- Download Xcode : Terminal ➲ gcc
-- Latest Update 12 Mar 2022 add Option 2 and 3 to make OpenCore Update, 
+### You need Command Line Tool and Xcode installed to using this program.
+- [x] `Download Command Line tool`
+
+ ```bash
+xcode-select --install
+```
+- Download Xcode [Xcode App Store](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
+- - Latest Update 12 Mar 2022 add Option 2 and 3 to make OpenCore Update, 
 - Option 5 OpenCore Package, Option P Terminal Profiles
 ### List of kexts:⬇︎
 
