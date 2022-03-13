@@ -1,5 +1,8 @@
 ## OpenCore-Creator
 
+- Latest Update 12 Mar 2022 add Option 2 and 3 to make OpenCore Update, Option 5 OpenCore Package, Option P Terminal Profiles
+-------------------------------------------------------
+
 - An easy builder of OpenCore (VirtualSMC / Other kext)
 - Everything is create in ➤  $HOME/Github folder
 - Works from macOS Catalina 10.15 to macOS Monterey 12
@@ -9,8 +12,6 @@
 #### Credit: ☞ [Acidanthera](https://github.com/acidanthera), [Apple](https://developer.apple.com/)
 -------------------------------------------------------
 
-- Latest Update 12 Mar 2022 add Option 2 and 3 to make OpenCore Update, Option 5 OpenCore Package, Option P Terminal Profiles
--------------------------------------------------------
 
 ### You need Command Line Tool and Xcode installed to using this program.
 - [x] `Download Command Line tool from this terminal command`
@@ -19,8 +20,7 @@
 xcode-select --install
 ```
 - Download Xcode [Xcode App Store](https://apps.apple.com/us/app/xcode/id497799835?mt=12) After downloading ➦ Open Xcode at least once
-------------------------------------------------------
-- Latest Update 12 Mar 2022 add Option 2 and 3 to make OpenCore Update, Option 5 OpenCore Package, Option P Terminal Profiles
+
 -------------------------------------------------------
 ### List of kexts:⬇︎
 
