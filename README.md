@@ -15,6 +15,7 @@ xcode-select --install
   
 - AirportBrcmFixup.kext
 - AppleALC.kext
+- BlueToolFixup.kext 
 - BrcmBluetoothInjector.kext
 - BrcmFirmwareData.kext
 - BrcmFirmwareRepo.kext
@@ -25,7 +26,9 @@ xcode-select --install
 - BrcmPatchRAM3.kext
 - BrightnessKeys.kext
 - IntelMausi.kext
+- IntelSnowMausi.kext
 - Lilu.kext
+- RestrictEvents.kext
 - NVMeFix.kext
 - SMCBatteryManager.kext
 - SMCDellSensors.kext
