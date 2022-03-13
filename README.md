@@ -8,7 +8,7 @@
 - Works from macOS Catalina 10.15 to macOS Monterey 12
 - OpenCore Package is now Included (Option 5) [OpenCore Package](https://github.com/chris1111/OpenCore-Package)
 - Terminal Profiler is now Included (Option P) [Terminal Profiler](https://github.com/chris1111/Terminal-Profiler)
-- 
+
 #### Credit: ☞ [Acidanthera](https://github.com/acidanthera), [Apple](https://developer.apple.com/)
 -------------------------------------------------------
 
