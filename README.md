@@ -47,7 +47,7 @@ xcode-select --install
 - OpenCore Package is now Included [OpenCore Package](https://github.com/chris1111/OpenCore-Package)
 - Terminal Profiler is now Included [Terminal Profiler](https://github.com/chris1111/Terminal-Profiler)
 
-#### Credit: ☞ [acidanthera](https://github.com/acidanthera), [Apple](https://developer.apple.com/)
+#### Credit: ☞ [Acidanthera](https://github.com/acidanthera), [Apple](https://developer.apple.com/)
 #### Download Release V5 ☞ [OpenCore Creator-V5.dmg ](https://github.com/chris1111/OpenCore-Creator/releases/tag/V5)
 
 #### Move the App on Desktop
