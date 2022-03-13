@@ -1,6 +1,19 @@
 ## OpenCore-Creator
+
+- An easy builder of OpenCore (VirtualSMC / Other kext)
+- Everything is create in ➤  $HOME/Github folder
+- Works from macOS Catalina 10.15 to macOS Monterey 12
+- OpenCore Package is now Included (Option 5) [OpenCore Package](https://github.com/chris1111/OpenCore-Package)
+- Terminal Profiler is now Included (Option P) [Terminal Profiler](https://github.com/chris1111/Terminal-Profiler)
+- 
+#### Credit: ☞ [Acidanthera](https://github.com/acidanthera), [Apple](https://developer.apple.com/)
+-------------------------------------------------------
+
+- Latest Update 12 Mar 2022 add Option 2 and 3 to make OpenCore Update, Option 5 OpenCore Package, Option P Terminal Profiles
+-------------------------------------------------------
+
 ### You need Command Line Tool and Xcode installed to using this program.
-- [x] `Download Command Line tool`
+- [x] `Download Command Line tool from this terminal command`
 
  ```bash
 xcode-select --install
@@ -42,14 +55,8 @@ xcode-select --install
   
 </details>
 
-- An easy builder of OpenCore (VirtualSMC / Other kext)
-- Everything is create in ➤  $HOME/Github folder
-- Works from macOS Catalina 10.15 to macOS Monterey 12
-- OpenCore Package is now Included (Option 5) [OpenCore Package](https://github.com/chris1111/OpenCore-Package)
-- Terminal Profiler is now Included (Option P) [Terminal Profiler](https://github.com/chris1111/Terminal-Profiler)
 -------------------------------------------------------
 
-#### Credit: ☞ [Acidanthera](https://github.com/acidanthera), [Apple](https://developer.apple.com/)
 #### Download Release V5 ☞ [OpenCore Creator-V5.dmg ](https://github.com/chris1111/OpenCore-Creator/releases/tag/V5)
 
 #### Move the App on Desktop
