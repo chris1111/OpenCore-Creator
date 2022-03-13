@@ -7,8 +7,7 @@ xcode-select --install
 ```
 - Download Xcode [Xcode App Store](https://apps.apple.com/us/app/xcode/id497799835?mt=12) After downloading ➦ Open Xcode at least once
 ------------------------------------------------------
-- Latest Update 12 Mar 2022 add Option 2 and 3 to make OpenCore Update, 
-- Option 5 OpenCore Package, Option P Terminal Profiles
+- Latest Update 12 Mar 2022 add Option 2 and 3 to make OpenCore Update, Option 5 OpenCore Package, Option P Terminal Profiles
 -------------------------------------------------------
 ### List of kexts:⬇︎
 
