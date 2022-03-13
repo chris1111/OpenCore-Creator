@@ -46,8 +46,9 @@ xcode-select --install
 - An easy builder of OpenCore (VirtualSMC / Other kext)
 - Everything is create in ➤  $HOME/Github folder
 - Works from macOS Catalina 10.15 to macOS Monterey 12
-- OpenCore Package is now Included [OpenCore Package](https://github.com/chris1111/OpenCore-Package)
-- Terminal Profiler is now Included [Terminal Profiler](https://github.com/chris1111/Terminal-Profiler)
+- OpenCore Package is now Included (Option 5) [OpenCore Package](https://github.com/chris1111/OpenCore-Package)
+- Terminal Profiler is now Included (Option P) [Terminal Profiler](https://github.com/chris1111/Terminal-Profiler)
+-------------------------------------------------------
 
 #### Credit: ☞ [Acidanthera](https://github.com/acidanthera), [Apple](https://developer.apple.com/)
 #### Download Release V5 ☞ [OpenCore Creator-V5.dmg ](https://github.com/chris1111/OpenCore-Creator/releases/tag/V5)
