@@ -21,6 +21,8 @@ xcode-select --install
 ```
 - Download Xcode [Xcode App Store](https://apps.apple.com/us/app/xcode/id497799835?mt=12) After downloading ➦ Open Xcode at least once
 
+- You can also using my script here ➤ [Developer-Command-LineTools](https://github.com/chris1111/Developer-Command-LineTools)
+
 -------------------------------------------------------
 ### List of kexts:⬇︎
 
