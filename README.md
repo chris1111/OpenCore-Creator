@@ -23,7 +23,7 @@ xcode-select --install
 
 - You can also using my script here ➤ [Developer-Command-LineTools](https://github.com/chris1111/Developer-Command-LineTools)
 
-### NOTE: On macOS 12.3 Build kexts not working with Xcode 13.3 (13E113), use Xcode 13.2.1 (13C100).
+#### NOTE: On macOS 12.3 Build kexts not working with Xcode 13.3 (13E113), use Xcode 13.2.1 (13C100).
 -------------------------------------------------------
 ### List of kexts:⬇︎
 
