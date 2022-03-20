@@ -1,6 +1,7 @@
 ## OpenCore-Creator
 
 #### Latest Update 20 Mar 2022 Add OpenCore Creator+Duet-V5
+- Fix Release V5 Open command in latest Monterey 12
 ## List Update: ⬇︎
 <details> 
   <summary>View list Update</summary>
