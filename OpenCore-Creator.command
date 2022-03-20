@@ -542,7 +542,7 @@ osascript -e 'tell app "Terminal" to display dialog "
 Quit OpenCore Creator" with icon file "Applications:OpenCore Creator.app:Contents:Resources:AppIcon.icns" buttons {"Exit"} default button 1 with title "OpenCore Creator"'
 echo " "
 say Thanks to using OpenCoreCreator!
-Open ./Logout.app
+osascript -e 'display notification "" with title "Closing OpenCore Creator" subtitle "Thanks to using OpenCoreCreator"'
 echo " "
 
 
