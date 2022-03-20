@@ -1,6 +1,7 @@
 ## OpenCore-Creator
 
-- Latest Update 12 Mar 2022 add Option 2 and 3 to make OpenCore Update, Option 5 OpenCore Package, Option P Terminal Profiles
+#### Latest Update 20 Mar 2022 Add OpenCore Creator+Duet-V5
+- Update 12 Mar 2022 add Option 2 and 3 to make OpenCore Update, Option 5 OpenCore Package, Option P Terminal Profiles
 -------------------------------------------------------
 
 - An easy builder of OpenCore (VirtualSMC / Other kext)
@@ -62,6 +63,7 @@ xcode-select --install
 -------------------------------------------------------
 
 #### Download Release V5 ☞ [OpenCore Creator-V5.dmg ](https://github.com/chris1111/OpenCore-Creator/releases/tag/V5)
+#### Download Release Duet-V5 ☞ [OpenCore Creator+Duet-V5.dmg ](https://github.com/chris1111/OpenCore-Creator/releases/tag/Duet-V5)
 
 #### Move the App on Desktop
 ![Webp net-gifmaker](https://user-images.githubusercontent.com/6248794/88553305-200dcf80-cff3-11ea-97f6-c3dba49d363d.gif)
