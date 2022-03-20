@@ -1,7 +1,14 @@
 ## OpenCore-Creator
 
 #### Latest Update 20 Mar 2022 Add OpenCore Creator+Duet-V5
+## List Update: ⬇︎
+<details> 
+  <summary>View list Update</summary>
+ 
 - Update 12 Mar 2022 add Option 2 and 3 to make OpenCore Update, Option 5 OpenCore Package, Option P Terminal Profiles
+ 
+</details>
+
 -------------------------------------------------------
 
 - An easy builder of OpenCore (VirtualSMC / Other kext)
