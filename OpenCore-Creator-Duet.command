@@ -4,9 +4,10 @@
 # (c) Copyright 2019 2022 chris1111 
 # Vars
 # Set Icon directory and file 
-iconfile="/System/Library/CoreServices/Finder.app/Contents/Resources/Finder.icns"
-apptitle="OpenCore Creator"
-version="1.0"
+export ICNS=$(dirname "${0}")
+iconfile="$ICNS/applet.icns"
+version="1.0" 
+
 
 PARENTDIR=$(dirname "$0")
 cd "$PARENTDIR"
@@ -559,7 +560,8 @@ echo " "
 echo "
 Quit Installer OpenCore Creator"
 osascript -e 'tell app "Terminal" to display dialog "
-Quit OpenCore Creator" with icon file "Applications:OpenCore Creator.app:Contents:Resources:AppIcon.icns" buttons {"Exit"} default button 1 with title "OpenCore Creator"'
+Quit OpenCore Creator" with icon POSIX file "'"$iconfile"'" buttons {"Exit"} default button 1 with title " OpenCore Creator"'
+
 echo " "
 say Thanks to using OpenCoreCreator!
 osascript -e 'display notification "" with title "Closing OpenCore Creator" subtitle "Thanks to using OpenCoreCreator"'
