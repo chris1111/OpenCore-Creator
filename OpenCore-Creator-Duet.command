@@ -536,7 +536,7 @@ end if
 EOD
 
 echo "`tput setaf 7``tput sgr0``tput bold``tput setaf 26`The Profile Terminal will be changed the next time you open OpenCore Creator.
-Cliquer sur Terminer pour quitter`tput sgr0` `tput setaf 7``tput sgr0`"
+Click Terminate to exit`tput sgr0` `tput setaf 7``tput sgr0`"
 Sleep 2
 
 osascript -e 'tell application "Terminal" to quit'
