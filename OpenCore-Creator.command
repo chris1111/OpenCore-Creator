@@ -4,8 +4,8 @@
 # (c) Copyright 2019 2022 chris1111 
 # Vars
 # Set Icon directory and file 
-iconfile="/System/Library/CoreServices/Finder.app/Contents/Resources/Finder.icns"
-apptitle="OpenCore Creator"
+export ICNS=$(dirname "${0}")
+iconfile="$ICNS/applet.icns"
 version="1.0"
 
 PARENTDIR=$(dirname "$0")
@@ -349,7 +349,7 @@ Sleep 2
 xcodebuild -project $HOME/Github/Build-Kexts/VirtualSMC/VirtualSMC.xcodeproj -alltargets -configuration Release
 echo "
 Build AppleALC
-Wait! Build AppleALC takes a long time. . ."
+Patienter! Build AppleALC prend beaucoups de temps. . ."
 Sleep 3
 xcodebuild -project $HOME/Github/Build-Kexts/AppleALC/AppleALC.xcodeproj -alltargets -configuration Release
 Sleep 2
@@ -515,7 +515,7 @@ end if
 EOD
 
 echo "`tput setaf 7``tput sgr0``tput bold``tput setaf 26`The Profile Terminal will be changed the next time you open OpenCore Creator.
-Click Terminate to exit`tput sgr0` `tput setaf 7``tput sgr0`"
+Cliquer sur Terminer pour quitter`tput sgr0` `tput setaf 7``tput sgr0`"
 Sleep 2
 
 osascript -e 'tell application "Terminal" to quit'
@@ -539,7 +539,8 @@ echo " "
 echo "
 Quit Installer OpenCore Creator"
 osascript -e 'tell app "Terminal" to display dialog "
-Quit OpenCore Creator" with icon file "Applications:OpenCore Creator.app:Contents:Resources:AppIcon.icns" buttons {"Exit"} default button 1 with title "OpenCore Creator"'
+Quit OpenCore Creator" with icon POSIX file "'"$iconfile"'" buttons {"Exit"} default button 1 with title " OpenCore Creator"'
+
 echo " "
 say Thanks to using OpenCoreCreator!
 osascript -e 'display notification "" with title "Closing OpenCore Creator" subtitle "Thanks to using OpenCoreCreator"'
@@ -589,7 +590,7 @@ Quit ;;
 echo ""
 esac
 echo
-echob "`tput setaf 7``tput sgr0``tput bold``tput setaf 26`Type any key to return in the menue`tput sgr0` `tput setaf 7``tput sgr0`"
+echob "`tput setaf 7``tput sgr0``tput bold``tput setaf 26`Type any key to return in the menu`tput sgr0` `tput setaf 7``tput sgr0`"
 echo
 read -n 1 line
 clear
