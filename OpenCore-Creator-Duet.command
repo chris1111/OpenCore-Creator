@@ -96,7 +96,7 @@ You need Xcode and Command Line tool installed.
 The output folder will be in
 ➤ $HOME/Github/OpenCorePkg
 
-Working from macOS Catalina to macOS Monterey 12
+Working from macOS Catalina to macOS Sonoma 14
 
 \n\nCancel Quit" buttons {"Cancel","OpenCore"} default button 2 with title "'"$apptitle"' '"$version"'" with icon POSIX file "'"$iconfile"'"  ')
 
@@ -230,7 +230,7 @@ You need Xcode and Command Line tool installed.
 The output folder will be in
 ➤ $HOME/Github/Build-Kexts
 
-Working from macOS Catalinato macOS Monterey 12
+Working from macOS Catalinato macOS Sonoma 14
 
 \n\nCancel Quit" buttons {"Cancel","OpenCore Kexts"} default button 2 with title "'"$apptitle"' '"$version"'" with icon POSIX file "'"$iconfile"'"  ')
 
@@ -297,9 +297,10 @@ git clone https://github.com/acidanthera/IntelMausi.git
 git clone https://github.com/acidanthera/BrcmPatchRAM.git
 git clone https://github.com/acidanthera/VoodooPS2.git
 git clone https://github.com/acidanthera/RestrictEvents.git
-
+git clone https://github.com/0xFireWolf/RealtekCardReader.git
+git clone https://github.com/0xFireWolf/RealtekCardReaderFriend.git
+git clone https://github.com/acidanthera/CryptexFixup.git
 cp -r ./MacKernelSDK ./Lilu
-
 echo "
 Build Lilu Debug " 
 Sleep 3 
@@ -321,11 +322,16 @@ cp -r $HOME/Github/Build-Kexts/Lilu.kext $HOME/Github/Build-Kexts/VoodooPS2
 cp -r ./MacKernelSDK ./VoodooPS2
 cp -r $HOME/Github/Build-Kexts/Lilu.kext $HOME/Github/Build-Kexts/RestrictEvents
 cp -r ./MacKernelSDK ./RestrictEvents
+cp -r $HOME/Github/Build-Kexts/Lilu.kext $HOME/Github/Build-Kexts/RealtekCardReader
+cp -r ./MacKernelSDK ./RealtekCardReader
+cp -r $HOME/Github/Build-Kexts/Lilu.kext $HOME/Github/Build-Kexts/RealtekCardReaderFriend
+cp -r ./MacKernelSDK ./RealtekCardReaderFriend
 cp -r $HOME/Github/Build-Kexts/Lilu.kext $HOME/Github/Build-Kexts/VirtualSMC
 cp -r ./MacKernelSDK ./VirtualSMC
 cp -r $HOME/Github/Build-Kexts/Lilu.kext $HOME/Github/Build-Kexts/AppleALC
 cp -r ./MacKernelSDK ./AppleALC
-
+cp -r $HOME/Github/Build-Kexts/Lilu.kext $HOME/Github/Build-Kexts/CryptexFixup
+cp -r ./MacKernelSDK ./CryptexFixup
 sleep 2
 mkdir -p $HOME/Github/Build-Kexts/Build
 echo "
@@ -361,16 +367,31 @@ Build VoodooPS2 "
 xcodebuild -project $HOME/Github/Build-Kexts/VoodooPS2/VoodooPS2Controller.xcodeproj -alltargets -configuration Release
 Sleep 2
 echo "
+Build CryptexFixup " 
+xcodebuild -project $HOME/Github/Build-Kexts/CryptexFixup/CryptexFixup.xcodeproj -alltargets -configuration Release
+Sleep 2
+echo "
 Build Lilu Release "
 Sleep 2
 xcodebuild -project $HOME/Github/Build-Kexts/Lilu/Lilu.xcodeproj -alltargets -configuration Release
 echo "
+Build RealtekCardReader "
+Sleep 2
+xcodebuild -project $HOME/Github/Build-Kexts/RealtekCardReader/RealtekCardReader.xcodeproj -alltargets -configuration Release
+echo "
+Build RealtekCardReaderFriend "
+Sleep 2
+xcodebuild -project $HOME/Github/Build-Kexts/RealtekCardReaderFriend/RealtekCardReaderFriend.xcodeproj -alltargets -configuration Release
+echo "
 Build VirtualSMC "
 Sleep 2
-xcodebuild -project $HOME/Github/Build-Kexts/VirtualSMC/VirtualSMC.xcodeproj -alltargets -configuration Release
+xcodebuild -project $HOME/Github/Build-Kexts/VirtualSMC/VirtualSMC.xcodeproj -configuration Release ARCHS=x86_64 ONLY_ACTIVE_ARCH=YES CONFIGURATION_BUILD_DIR=$HOME/Github/Build-Kexts/VirtualSMC
+mkdir -p $HOME/Github/Build-Kexts/VirtualSMC/OUT
+Sleep 1
+tar xf $HOME/Github/Build-Kexts/VirtualSMC/VirtualSMC-*-RELEASE.zip --directory $HOME/Github/Build-Kexts/VirtualSMC/OUT
 echo "
 Build AppleALC
-Patienter! Build AppleALC prend beaucoups de temps. . ."
+Wait! Build AppleALC takes a long time. . ."
 Sleep 3
 xcodebuild -project $HOME/Github/Build-Kexts/AppleALC/AppleALC.xcodeproj -alltargets -configuration Release
 Sleep 2
@@ -384,7 +405,10 @@ rm -rf $HOME/Github/Build-Kexts/NVMeFix/Lilu.kext
 rm -rf $HOME/Github/Build-Kexts/RestrictEvents/Lilu.kext
 rm -rf $HOME/Github/Build-Kexts/VirtualSMC/Lilu.kext
 rm -rf $HOME/Github/Build-Kexts/VoodooPS2/Lilu.kext
+rm -rf $HOME/Github/Build-Kexts/CryptexFixup/Lilu.kext
 rm -rf $HOME/Github/Build-Kexts/WhateverGreen/Lilu.kext
+rm -rf $HOME/Github/Build-Kexts/RealtekCardReader/Lilu.kext
+rm -rf $HOME/Github/Build-Kexts/RealtekCardReaderFriend/Lilu.kext
 rm -rf $HOME/Github/Build-Kexts/Lilu.kext
 rm -rf $HOME/Github/Build-Kexts/*.zip
 rm -rf $HOME/Github/Build-Kexts/MacKernelSDK
@@ -398,21 +422,29 @@ rm -rf $HOME/Github/Build-Kexts/NVMeFix/MacKernelSDK
 rm -rf $HOME/Github/Build-Kexts/RestrictEvents/MacKernelSDK
 rm -rf $HOME/Github/Build-Kexts/VirtualSMC/MacKernelSDK
 rm -rf $HOME/Github/Build-Kexts/VoodooPS2/MacKernelSDK
+rm -rf $HOME/Github/Build-Kexts/CryptexFixup/MacKernelSDK
 rm -rf $HOME/Github/Build-Kexts/WhateverGreen/MacKernelSDK
+rm -rf $HOME/Github/Build-Kexts/RealtekCardReader/MacKernelSDK
+rm -rf $HOME/Github/Build-Kexts/RealtekCardReaderFriend/MacKernelSDK
 rm -rf $HOME/Github/Build-Kexts/MacKernelSDK
+
 echo "Create Build final "
 Sleep 2
-cp -r $HOME/Github/Build-Kexts/VirtualSMC/build/Release/package/dSYM/* $HOME/Github/Build-Kexts/Build
-cp -r $HOME/Github/Build-Kexts/VirtualSMC/build/Release/package/Kexts/* $HOME/Github/Build-Kexts/Build
-cp -r $HOME/Github/Build-Kexts/VirtualSMC/build/Release/package/Tools/ $HOME/Github/Build-Kexts/Build/Tools
+cp -r $HOME/Github/Build-Kexts/VirtualSMC/OUT/dSYM/* $HOME/Github/Build-Kexts/Build
+cp -r $HOME/Github/Build-Kexts/VirtualSMC/OUT/Kexts/* $HOME/Github/Build-Kexts/Build
+cp -r $HOME/Github/Build-Kexts/VirtualSMC/OUT/Tools/ $HOME/Github/Build-Kexts/Build/Tools
+cp -r $HOME/Github/Build-Kexts/VirtualSMC/VirtualSMC-*-RELEASE.zip $HOME/Github/Build-Kexts/Build
 cp -r $HOME/Github/Build-Kexts/AirportBrcmFixup/build/Release/* $HOME/Github/Build-Kexts/Build
 cp -r $HOME/Github/Build-Kexts/AppleALC/build/Release/* $HOME/Github/Build-Kexts/Build
 cp -r $HOME/Github/Build-Kexts/BrcmPatchRAM/build/Products/Release/* $HOME/Github/Build-Kexts/Build
 cp -r $HOME/Github/Build-Kexts/BrightnessKeys/build/Release/* $HOME/Github/Build-Kexts/Build
 cp -r $HOME/Github/Build-Kexts/IntelMausi/build/Release/* $HOME/Github/Build-Kexts/Build
 cp -r $HOME/Github/Build-Kexts/Lilu/build/Release/* $HOME/Github/Build-Kexts/Build
+cp -r $HOME/Github/Build-Kexts/RealtekCardReader/build/Release/* $HOME/Github/Build-Kexts/Build
+cp -r $HOME/Github/Build-Kexts/RealtekCardReaderFriend/build/Release/* $HOME/Github/Build-Kexts/Build
 cp -r $HOME/Github/Build-Kexts/NVMeFix/build/Release/* $HOME/Github/Build-Kexts/Build
 cp -r $HOME/Github/Build-Kexts/RestrictEvents/build/Release/* $HOME/Github/Build-Kexts/Build
+cp -r $HOME/Github/Build-Kexts/CryptexFixup/build/Release/* $HOME/Github/Build-Kexts/Build
 cp -r $HOME/Github/Build-Kexts/VoodooPS2/build/Products/Release/dSYM/* $HOME/Github/Build-Kexts/Build
 cp -r $HOME/Github/Build-Kexts/VoodooPS2/build/Products/Release/*.zip $HOME/Github/Build-Kexts/Build
 cp -r $HOME/Github/Build-Kexts/VoodooPS2/build/Products/Release/*.kext $HOME/Github/Build-Kexts/Build
