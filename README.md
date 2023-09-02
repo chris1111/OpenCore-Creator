@@ -34,8 +34,9 @@ xcode-select --install
 
 - You can also using my script here ➤ [Developer-Command-LineTools](https://github.com/chris1111/Developer-Command-LineTools)
 
-#### NOTE: On macOS 12.3 Build kexts not working with Xcode 13.3 (13E113), Use MacOSX12.1.sdk from Xcode 13.2.1 (13C100)
-#### See How ➤[macOS-SDK](https://github.com/chris1111/macOS-SDK)
+<strike>NOTE: On macOS 12.3 Build kexts not working with Xcode 13.3 (13E113), Use MacOSX12.1.sdk from Xcode 13.2.1 (13C100)
+See How ➤[macOS-SDK](https://github.com/chris1111/macOS-SDK)</strike>
+
 -------------------------------------------------------
 ### List of kexts:⬇︎
 
