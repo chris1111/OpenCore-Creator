@@ -1,0 +1,63 @@
+name: Prepare Release Branch
+
+on:
+  push:
+    branches:         # array of glob patterns matching against refs/heads. Optional; defaults to all
+    - master          # triggers on pushes that contain changes in master
+
+jobs:
+  prepare-release-branch:
+    name: Prepare Release Branch
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Checkout
+      uses: actions/checkout@v1.0.0
+
+    - run: |
+        # Add origin as remote
+        git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+        # Hard-code user config
+        git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+        git config user.name "${GITHUB_REPOSITORY}[bot]"
+        # Make sure HEAD is not detached
+        git checkout -b master
+        # Fetch origin
+        git fetch origin
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Sync with release branch
+      run: |
+        if [ -f .git/refs/remotes/origin/release ]; then
+          # refs/heads/release exists at origin
+          git checkout release
+          # Merge in latest master
+          git merge -m "${COMMIT_MSG}" master
+        else
+          # refs/heads/release does not exist at origin
+          git checkout -b release
+        fi
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        COMMIT_MSG: |
+          sync: master
+          skip-checks: true
+
+    # Install production dependencies
+    - run: npm i --only=production
+
+    - run: |
+        git add --force package-lock.json node_modules
+        # Look for staged changes
+        if [[ $(git diff --cached --stat) != '' ]]; then
+          # Changes have been staged, commit them
+          git commit -m "${COMMIT_MSG}"
+        fi
+        # Push our changes back to the release branch
+        git push origin release
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        COMMIT_MSG: |
+          build: dist
+          skip-checks: true
