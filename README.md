@@ -38,7 +38,7 @@ xcode-select --install
 See How ➤[macOS-SDK](https://github.com/chris1111/macOS-SDK)</strike>
 
 -------------------------------------------------------
-### List of kexts:⬇︎
+### List of kexts: ⬇︎
 
 <details> 
   <summary>View kexts list Update</summary>
@@ -68,7 +68,10 @@ See How ➤[macOS-SDK](https://github.com/chris1111/macOS-SDK)</strike>
 - VirtualSMC.kext
 - VoodooPS2Controller.kext
 - WhateverGreen.kext
-  
+- RealtekCardReader.kext
+- RealtekCardReaderFriend.kext
+- CryptexFixup.kext
+
 </details>
 
 -------------------------------------------------------
