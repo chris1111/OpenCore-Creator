@@ -1,11 +1,13 @@
 ## OpenCore-Creator
 
-#### Latest Update 20 Mar 2022 Add OpenCore Creator+Duet-V5
-- Fix Release V5 Open and close command in latest Monterey 12
+#### Latest Update 02 Sept 2023 Build more kexts
+
 ## List Update: ⬇︎
 <details> 
   <summary>View list Update</summary>
- 
+  
+- Update 20 Mar 2022 Add OpenCore Creator+Duet-V5, fix Release V5 Open and close command in latest Monterey 12
+
 - Update 12 Mar 2022 add Option 2 and 3 to make OpenCore Update, Option 5 OpenCore Package, Option P Terminal Profiles
  
 </details>
