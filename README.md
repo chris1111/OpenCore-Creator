@@ -80,11 +80,9 @@ See How ➤[macOS-SDK](https://github.com/chris1111/macOS-SDK)</strike>
 #### Download Release Duet-V6 ☞ [OpenCore Creator+Duet-V6.dmg ](https://github.com/chris1111/OpenCore-Creator/releases/tag/Duet-V6)
 
 #### Move the App on Desktop
-![Webp net-gifmaker](https://user-images.githubusercontent.com/6248794/88553305-200dcf80-cff3-11ea-97f6-c3dba49d363d.gif)
-
+![Untitled](https://github.com/chris1111/OpenCore-Creator/assets/6248794/2648c01e-065b-4b1b-9552-fd2f2eb2fd45)
 
 ![Capture 1](https://user-images.githubusercontent.com/6248794/88550516-b93ae700-cfef-11ea-92ff-2c2a9ab3acdb.png)
-
 
 ![Screen Shot](https://user-images.githubusercontent.com/6248794/158032143-5da35966-4971-4020-99dd-acd031ec2ed6.png)
 
