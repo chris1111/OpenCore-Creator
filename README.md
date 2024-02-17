@@ -1,10 +1,13 @@
 ## OpenCore-Creator
 
-#### Latest Update 02 Sept 2023 Build more kexts
+#### Latest Update 17 February 2024 Add (Option 0) Check OC Version
+- Fix using any time (Option 5) OpenCore Package
 
 ## List Update: ⬇︎
 <details> 
   <summary>View list Update</summary>
+
+- Update 02 Sept 2023 Build more kexts
   
 - Update 20 Mar 2022 Add OpenCore Creator+Duet-V5, fix Release V5 Open and close command in latest Monterey 12
 
@@ -76,8 +79,8 @@ See How ➤[macOS-SDK](https://github.com/chris1111/macOS-SDK)</strike>
 
 -------------------------------------------------------
 
-#### Download Release V6 ☞ [OpenCore Creator-V6.dmg ](https://github.com/chris1111/OpenCore-Creator/releases/tag/V6)
-#### Download Release Duet-V6 ☞ [OpenCore Creator+Duet-V6.dmg ](https://github.com/chris1111/OpenCore-Creator/releases/tag/Duet-V6)
+#### Download Release V7 ☞ [OpenCore Creator-V7.dmg ](https://github.com/chris1111/OpenCore-Creator/releases/tag/V7)
+#### Download Release Duet-V7 ☞ [OpenCore Creator+Duet-V7.dmg ](https://github.com/chris1111/OpenCore-Creator/releases/tag/Duet-V7)
 
 #### Move the App on Desktop
 ![Untitled](https://github.com/chris1111/OpenCore-Creator/assets/6248794/2648c01e-065b-4b1b-9552-fd2f2eb2fd45)

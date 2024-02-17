@@ -55,6 +55,8 @@ echo " "
 echo "                        
                  `tput setaf 7``tput sgr0``tput bold``tput setaf 26`Type: ⬇`tput sgr0` `tput setaf 7``tput sgr0`︎"
 echo "               =========================================== "
+echo "                     ✅  0 = `tput setaf 7``tput sgr0``tput bold``tput setaf 26`Check OpenCore Version`tput sgr0` `tput setaf 7``tput sgr0`"
+echo "               =========================================== "
 echo "                     ✅  1 = `tput setaf 7``tput sgr0``tput bold``tput setaf 26`Build OpenCore`tput sgr0` `tput setaf 7``tput sgr0`"
 echo "               =========================================== "
 echo "                     ✅  2 = `tput setaf 7``tput sgr0``tput bold``tput setaf 26`Check update OpenCore`tput sgr0` `tput setaf 7``tput sgr0`"
@@ -83,6 +85,21 @@ tput sgr0
 echo "              = = = = = = = = = = = = = = = = = = = = = = = = =  "
 
 read -n 1 option
+}
+function OPENCOREV
+{
+head
+echo " "
+echo "Check OpenCore Version"
+Sleep 1
+echo "= = = = = = = = = = = = = = = = = = = = = = = = =  
+OpenCore"
+
+sed -n '3p' $HOME/Github/OpenCorePkg/Changelog.md
+echo "= = = = = = = = = = = = = = = = = = = = = = = = =  "
+
+echo "`tput setaf 7``tput sgr0``tput bold``tput setaf 26`Check OpenCore Version.`tput sgr0` `tput setaf 7``tput sgr0`"
+echo " "
 }
 function OPENCORE
 {
@@ -464,6 +481,8 @@ function OPENCOREPACKAGE
 {
 head
 echo " "
+PARENTDIR=$(dirname "$0")
+cd "$PARENTDIR"
 echo "OpenCore Package"
 Sleep 1
 rm -rf $HOME/Desktop/OpenCorePackage
@@ -610,7 +629,9 @@ head
 menu
 case $option in
 
-
+0|0)
+echo
+OPENCOREV ;;
 1|1)
 echo
 OPENCORE ;;
