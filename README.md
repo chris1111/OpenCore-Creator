@@ -29,15 +29,15 @@
 -------------------------------------------------------
 
 
-### You need Command Line Tool and Xcode installed to using this program.
-- [x] `Download Command Line tool from this terminal command`
+#### Prerequisite: Command Line Tools (CLT) for Xcode (from `xcode-select --install` or [Developer Apple Command Line Tools](https://developer.apple.com/download/all/)
+
+- [x] `Download Command Line tool from terminal`
 
  ```bash
 xcode-select --install
 ```
 - Download Xcode [Xcode App Store](https://apps.apple.com/us/app/xcode/id497799835?mt=12) After downloading ➦ Open Xcode at least once
 
-- You can also using my script here ➤ [Developer-Command-LineTools](https://github.com/chris1111/Developer-Command-LineTools)
 
 <strike>NOTE: On macOS 12.3 Build kexts not working with Xcode 13.3 (13E113), Use MacOSX12.1.sdk from Xcode 13.2.1 (13C100)
 See How ➤[macOS-SDK](https://github.com/chris1111/macOS-SDK)</strike>
