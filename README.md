@@ -29,7 +29,7 @@
 -------------------------------------------------------
 
 
-#### Prerequisite: Command Line Tools (CLT) for Xcode (from `xcode-select --install` or [Developer Apple Command Line Tools](https://developer.apple.com/download/all/)
+#### Prerequisite: Command Line Tools (CLT) for Xcode or [Developer Apple Command Line Tools](https://developer.apple.com/download/all/)
 
 - [x] `Download Command Line tool from terminal`
 
