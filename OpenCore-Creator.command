@@ -118,7 +118,7 @@ Working from macOS Catalina to macOS Sonoma 14
 
 answer=$(echo $response | grep "OpenCore")
 
-# Cancel is user does not select OpenCore Kexts
+# Cancel is user does not select OpenCore
 if [ ! "$answer" ] ; then
   osascript -e 'display notification "Program closing" with title "'"$apptitle"'" subtitle "User cancelled"'
 echo "              = = = = = = = = = = = = = = = = = = = = = = = = =  "
@@ -133,23 +133,49 @@ fi
 
 echo "Build OpenCore"
 Sleep 4
-file=/usr/local/bin/nasm
-if [ -e "$file" ]; then
-    echo "nasm exists no need password"
-Sleep 2
-else 
-    echo "
+file="/usr/local/bin/"
+if [[ -f $file/nasm && -f $file/ndisasm && -f $file/iasl && -f $file/mtoc ]]; then
+ echo "Binary Exist! Proceed Build OpenCore"
+ Sleep 3
+else
+ echo "Somes binary is missing"
+echo "
 =======================================
+Somes binary's is missing!
+OpenCore-Creator must be download then install missing binary's.
 Build OpenCore must be done as root
 Enter your password:
 ======================================= "
 sudo mkdir -p /usr/local/bin
-sudo cp -Rp ./NASM/iasl /usr/local/bin
-sudo cp -Rp ./NASM/mtoc /usr/local/bin
-sudo cp -Rp ./NASM/nasm /usr/local/bin
-sudo cp -Rp ./NASM/ndisasm /usr/local/bin
+pushd /Private/tmp >/dev/null || exit 1
+BIN=BIN-Exctract
+mkdir -p $BIN
+curl -OL "https://github.com/acidanthera/ocmtoc/releases/download/1.0.3/ocmtoc-1.0.3-RELEASE.zip" || exit 1
 
+pushd /Private/tmp >/dev/null || exit 1
+rm -rf nasm-mac64.zip
+curl -OL "https://github.com/acidanthera/ocbuild/raw/master/external/nasm-mac64.zip" || exit 1
+nasmzip=$(cat nasm-mac64.zip)
+rm -rf nasm-*
+curl -OL "https://github.com/acidanthera/ocbuild/raw/master/external/${nasmzip}" || exit 1
+
+pushd /Private/tmp >/dev/null || exit 1
+rm -rf iasl-macosx.zip
+curl -OL "https://github.com/acidanthera/ocbuild/raw/master/external/iasl-macosx.zip" || exit 1
+iaslzip=$(cat iasl-macosx.zip)
+rm -rf iasl-macosx.zip
+curl -OL "https://github.com/acidanthera/ocbuild/raw/master/external/${iaslzip}" || exit 1
+
+unzip -jo nasm-2.15.05-macosx.zip nasm-2.15.05/nasm -d /Private/tmp/$BIN
+unzip -jo nasm-2.15.05-macosx.zip nasm-2.15.05/ndisasm -d /Private/tmp/$BIN
+unzip -jo iasl-20200528-macosx.zip iasl -d /Private/tmp/$BIN
+unzip -jo ocmtoc-1.0.3-RELEASE.zip mtoc -d /Private/tmp/$BIN
+sudo cp -Rp /Private/tmp/$BIN/ndisasm /usr/local/bin
+sudo cp -Rp /Private/tmp/$BIN/nasm /usr/local/bin
+sudo cp -Rp /Private/tmp/$BIN/iasl /usr/local/bin
+sudo cp -Rp /Private/tmp/$BIN/mtoc /usr/local/bin
 fi
+
 
 if [ "/$HOME/Github/OpenCorePkg" ]; then
 	rm -rf "/$HOME/Github/OpenCorePkg"

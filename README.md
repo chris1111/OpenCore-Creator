@@ -1,11 +1,13 @@
 ## OpenCore-Creator
 
-#### Latest Update 17 February 2024 Add (Option 0) Check OC Version
-- Fix using any time (Option 5) OpenCore Package
+#### Latest Update 26 Apr 2024 
+- Download then install mandatory binary's for building OpenCore if not exist.
 
 ## List Update: ⬇︎
 <details> 
   <summary>View list Update</summary>
+
+- Update 17 February 2024 Add (Option 0) Check OC Version. Fix using any time (Option 5) OpenCore Package
 
 - Update 02 Sept 2023 Build more kexts
   
@@ -79,8 +81,8 @@ See How ➤[macOS-SDK](https://github.com/chris1111/macOS-SDK)</strike>
 
 -------------------------------------------------------
 
-#### Download Release V7 ☞ [OpenCore Creator-V7.dmg ](https://github.com/chris1111/OpenCore-Creator/releases/tag/V7)
-#### Download Release Duet-V7 ☞ [OpenCore Creator+Duet-V7.dmg ](https://github.com/chris1111/OpenCore-Creator/releases/tag/Duet-V7)
+#### Download Release V8 ☞ [OpenCore Creator-V8.dmg ](https://github.com/chris1111/OpenCore-Creator/releases/tag/V8)
+#### Download Release Duet-V8 ☞ [OpenCore Creator+Duet-V8.dmg ](https://github.com/chris1111/OpenCore-Creator/releases/tag/Duet-V8)
 
 #### Move the App on Desktop
 ![Untitled](https://github.com/chris1111/OpenCore-Creator/assets/6248794/2648c01e-065b-4b1b-9552-fd2f2eb2fd45)
