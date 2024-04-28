@@ -142,39 +142,47 @@ else
  echo "Somes binary is missing"
 echo "
 =======================================
-Somes binary's is missing!
-OpenCore-Creator must be download then install missing binary's.
+Somes binary's is missing! 🚫
+OpenCore-Creator should download and then install the missing binaries.
 Build OpenCore must be done as root
 Enter your password:
 ======================================= "
 sudo mkdir -p /usr/local/bin
 pushd /Private/tmp >/dev/null || exit 1
 BIN=BIN-Exctract
+rm -rf /Private/tmp/BIN-Exctract
 mkdir -p $BIN
+# mtoc
 curl -OL "https://github.com/acidanthera/ocmtoc/releases/download/1.0.3/ocmtoc-1.0.3-RELEASE.zip" || exit 1
-
+# nasm
 pushd /Private/tmp >/dev/null || exit 1
 rm -rf nasm-mac64.zip
 curl -OL "https://github.com/acidanthera/ocbuild/raw/master/external/nasm-mac64.zip" || exit 1
 nasmzip=$(cat nasm-mac64.zip)
 rm -rf nasm-*
 curl -OL "https://github.com/acidanthera/ocbuild/raw/master/external/${nasmzip}" || exit 1
-
+# iasl
 pushd /Private/tmp >/dev/null || exit 1
 rm -rf iasl-macosx.zip
 curl -OL "https://github.com/acidanthera/ocbuild/raw/master/external/iasl-macosx.zip" || exit 1
 iaslzip=$(cat iasl-macosx.zip)
 rm -rf iasl-macosx.zip
 curl -OL "https://github.com/acidanthera/ocbuild/raw/master/external/${iaslzip}" || exit 1
-
-unzip -jo nasm-2.15.05-macosx.zip nasm-2.15.05/nasm -d /Private/tmp/$BIN
-unzip -jo nasm-2.15.05-macosx.zip nasm-2.15.05/ndisasm -d /Private/tmp/$BIN
-unzip -jo iasl-20200528-macosx.zip iasl -d /Private/tmp/$BIN
-unzip -jo ocmtoc-1.0.3-RELEASE.zip mtoc -d /Private/tmp/$BIN
-sudo cp -Rp /Private/tmp/$BIN/ndisasm /usr/local/bin
-sudo cp -Rp /Private/tmp/$BIN/nasm /usr/local/bin
-sudo cp -Rp /Private/tmp/$BIN/iasl /usr/local/bin
-sudo cp -Rp /Private/tmp/$BIN/mtoc /usr/local/bin
+# unzip all
+pushd /Private/tmp >/dev/null || exit 1
+unzip -jo nasm-2.15.05-macosx.zip nasm-2.15.05/nasm -d $BIN
+unzip -jo nasm-2.15.05-macosx.zip nasm-2.15.05/ndisasm -d $BIN
+unzip -jo iasl-20200528-macosx.zip iasl -d $BIN
+unzip -jo ocmtoc-1.0.3-RELEASE.zip mtoc -d $BIN
+# remove zip
+pushd /Private/tmp >/dev/null || exit 1
+rm -rf *.zip
+sudo cp -Rp $BIN/ndisasm /usr/local/bin
+sudo cp -Rp $BIN/nasm /usr/local/bin
+sudo cp -Rp $BIN/iasl /usr/local/bin
+sudo cp -Rp $BIN/mtoc /usr/local/bin
+echo "Build OpenCore ✅"
+Sleep 3
 fi
 
 if [ "/$HOME/Github/OpenCorePkg" ]; then
