@@ -1,7 +1,8 @@
 ## OpenCore-Creator
 
-#### Latest Update 26 Apr 2024 
+#### Latest Update 28 Apr 2024 Release V8
 - Download then install mandatory binary's for building OpenCore if not exist.
+- Update Icon program
 
 ## List Update: ⬇︎
 <details> 
