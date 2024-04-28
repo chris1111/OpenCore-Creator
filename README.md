@@ -1,5 +1,7 @@
 ## OpenCore-Creator
 
+<img width="256" alt="applet" src="https://github.com/chris1111/OpenCore-Creator/assets/6248794/152bfefe-6d5e-446a-a588-ea4d1a35e74f">
+
 #### Latest Update 28 Apr 2024 Release V8
 - Download then install mandatory binary's for building OpenCore if not exist.
 - Update Icon program
