@@ -302,26 +302,57 @@ fi
 
 echo "Build Kexts"
 Sleep 4
-file=/usr/local/bin/nasm
-if [ -e "$file" ]; then
-    echo "nasm exists no need password"
-Sleep 2
-else 
-    echo "
+file="/usr/local/bin/"
+if [[ -f $file/nasm && -f $file/ndisasm && -f $file/iasl && -f $file/mtoc ]]; then
+ echo "Binary Exist! Proceed Build Kexts"
+ Sleep 3
+else
+ echo "Somes binary is missing"
+echo "
 =======================================
+Somes binary's is missing! 🚫
+OpenCore-Creator should download and then install the missing binaries.
 Build Kexts must be done as root
-Enter your password: 
+Enter your password:
 ======================================= "
 sudo mkdir -p /usr/local/bin
-sudo cp -Rp ./NASM/iasl /usr/local/bin
-sudo cp -Rp ./NASM/mtoc /usr/local/bin
-sudo cp -Rp ./NASM/nasm /usr/local/bin
-sudo cp -Rp ./NASM/ndisasm /usr/local/bin
-
+pushd /Private/tmp >/dev/null || exit 1
+BIN=BIN-Exctract
+rm -rf /Private/tmp/BIN-Exctract
+mkdir -p $BIN
+# mtoc
+curl -OL "https://github.com/acidanthera/ocmtoc/releases/download/1.0.3/ocmtoc-1.0.3-RELEASE.zip" || exit 1
+# nasm
+pushd /Private/tmp >/dev/null || exit 1
+rm -rf nasm-mac64.zip
+curl -OL "https://github.com/acidanthera/ocbuild/raw/master/external/nasm-mac64.zip" || exit 1
+nasmzip=$(cat nasm-mac64.zip)
+rm -rf nasm-*
+curl -OL "https://github.com/acidanthera/ocbuild/raw/master/external/${nasmzip}" || exit 1
+# iasl
+pushd /Private/tmp >/dev/null || exit 1
+rm -rf iasl-macosx.zip
+curl -OL "https://github.com/acidanthera/ocbuild/raw/master/external/iasl-macosx.zip" || exit 1
+iaslzip=$(cat iasl-macosx.zip)
+rm -rf iasl-macosx.zip
+curl -OL "https://github.com/acidanthera/ocbuild/raw/master/external/${iaslzip}" || exit 1
+# unzip all
+pushd /Private/tmp >/dev/null || exit 1
+unzip -jo nasm-2.15.05-macosx.zip nasm-2.15.05/nasm -d $BIN
+unzip -jo nasm-2.15.05-macosx.zip nasm-2.15.05/ndisasm -d $BIN
+unzip -jo iasl-20200528-macosx.zip iasl -d $BIN
+unzip -jo ocmtoc-1.0.3-RELEASE.zip mtoc -d $BIN
+# remove zip
+pushd /Private/tmp >/dev/null || exit 1
+rm -rf *.zip
+sudo cp -Rp $BIN/ndisasm /usr/local/bin
+sudo cp -Rp $BIN/nasm /usr/local/bin
+sudo cp -Rp $BIN/iasl /usr/local/bin
+sudo cp -Rp $BIN/mtoc /usr/local/bin
+echo "Build Kexts ✅"
+Sleep 3
 fi
 
-
-echo "Build Kexts"
 
 if [ "/$HOME/Github/Build-Kexts" ]; then
 	rm -rf "/$HOME/Github/Build-Kexts"
