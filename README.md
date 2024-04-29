@@ -23,8 +23,9 @@
 -------------------------------------------------------
 
 - An easy builder of OpenCore (VirtualSMC / Other kext)
-- Everything is create in ➤  $HOME/Github folder
-- Works from macOS Catalina 10.15 to macOS Monterey 12
+- OpenCore is create in ➤  $HOME/Github / OpenCorePkg
+- Kexts is create in ➤  $HOME/Github / Build-Kexts
+- Works from macOS Catalina 10.15 to macOS Sonoma 14
 - OpenCore Package is now Included (Option 5) [OpenCore Package](https://github.com/chris1111/OpenCore-Package)
 - Terminal Profiler is now Included (Option P) [Terminal Profiler](https://github.com/chris1111/Terminal-Profiler)
 
@@ -88,9 +89,11 @@ See How ➤[macOS-SDK](https://github.com/chris1111/macOS-SDK)</strike>
 #### Download Release Duet-V8 ☞ [OpenCore Creator+Duet-V8.dmg ](https://github.com/chris1111/OpenCore-Creator/releases/tag/Duet-V8)
 
 #### Move the App on Desktop
-![Untitled](https://github.com/chris1111/OpenCore-Creator/assets/6248794/2648c01e-065b-4b1b-9552-fd2f2eb2fd45)
+![DMG](https://github.com/chris1111/OpenCore-Creator/assets/6248794/1cdb88f9-5363-439a-8e49-10be9e86f572)
 
-![Capture 1](https://user-images.githubusercontent.com/6248794/88550516-b93ae700-cfef-11ea-92ff-2c2a9ab3acdb.png)
 
-![Screen Shot](https://user-images.githubusercontent.com/6248794/158032143-5da35966-4971-4020-99dd-acd031ec2ed6.png)
+![Screenshot1](https://github.com/chris1111/OpenCore-Creator/assets/6248794/05255ae1-b3ba-473d-b5b4-600102ee0382)
+
+![Screenshot2](https://github.com/chris1111/OpenCore-Creator/assets/6248794/b3b5f08f-f8cd-464e-b42a-25c9f8bbd216)
+
 
