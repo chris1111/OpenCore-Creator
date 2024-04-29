@@ -37,14 +37,10 @@
 
 - [x] `Download Command Line tool from terminal`
 
- ```bash
-xcode-select --install
-```
+`xcode-select --install`
+
 - Download Xcode [Xcode App Store](https://apps.apple.com/us/app/xcode/id497799835?mt=12) After downloading ➦ Open Xcode at least once
 
-
-<strike>NOTE: On macOS 12.3 Build kexts not working with Xcode 13.3 (13E113), Use MacOSX12.1.sdk from Xcode 13.2.1 (13C100)
-See How ➤[macOS-SDK](https://github.com/chris1111/macOS-SDK)</strike>
 
 -------------------------------------------------------
 ### List of kexts: ⬇︎
@@ -89,7 +85,8 @@ See How ➤[macOS-SDK](https://github.com/chris1111/macOS-SDK)</strike>
 #### Download Release Duet-V8 ☞ [OpenCore Creator+Duet-V8.dmg ](https://github.com/chris1111/OpenCore-Creator/releases/tag/Duet-V8)
 
 #### Move the App on Desktop
-![DMG](https://github.com/chris1111/OpenCore-Creator/assets/6248794/1cdb88f9-5363-439a-8e49-10be9e86f572)
+![DMG](https://github.com/chris1111/OpenCore-Creator/assets/6248794/d753f791-f0c4-4092-a7d7-a3eb7a4c3705)
+
 
 
 ![Screenshot1](https://github.com/chris1111/OpenCore-Creator/assets/6248794/05255ae1-b3ba-473d-b5b4-600102ee0382)
