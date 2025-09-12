@@ -15,7 +15,7 @@ sleep 1 & PID=$! #Progress Bar
 
 echo "`tput setaf 7``tput sgr0``tput bold``tput setaf 26`
                 **************************************************** 
-                *************     OpenCoreCreator     ************** 
+                *************     OpenCore Creator    ************** 
                 ****************************************************
 `tput sgr0` `tput setaf 7``tput sgr0`"
 echo " "
