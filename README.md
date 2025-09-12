@@ -95,6 +95,17 @@
 - Go to System Settings/Login Items & Extensions then add the app by the + button to make the app at login
 <img width="479" height="423" alt="Screenshot 2025-09-12 at 5 09 33 PM" src="https://github.com/user-attachments/assets/b7fbc6f9-608b-4384-ab65-1073288d165c" />
 
+#### Open OpenCore Creator.app from Applications then run it from Status Menu
+<img width="311" height="80" alt="Screenshot 1" src="https://github.com/user-attachments/assets/cec6db7c-ae53-4b88-a16a-3e16d4c4aad8" />
+
+#### Option OpenCore Creator: to build OpenCore
+<img width="592" height="930" alt="Screenshot 2" src="https://github.com/user-attachments/assets/5997ee69-2891-4f77-acd3-f6fb19e656fb" />
+
+#### Option OpenCore Package: to create a macOS installer of OpenCore
+<img width="1049" height="841" alt="Screenshot 3" src="https://github.com/user-attachments/assets/fd42cf8d-b908-4821-a85f-ca1d24a7d95e" />
+
+
+
 
 
 
