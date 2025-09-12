@@ -93,5 +93,8 @@
 
 #### Move the App to the Applications 
 - Go to System Settings/Login Items & Extensions then add the app by the + button to make the app at login
+<img width="479" height="423" alt="Screenshot 2025-09-12 at 5 09 33 PM" src="https://github.com/user-attachments/assets/b7fbc6f9-608b-4384-ab65-1073288d165c" />
+
+
 
 
