@@ -88,7 +88,7 @@
 
 -------------------------------------------------------
 
-#### Download Release V9 ☞ [OpenCore Creator-V9.dmg ](https://github.com/chris1111/OpenCore-Creator/releases/tag/V9)
+#### Download Release V9 (Available tonight) ☞ [OpenCore Creator-V9.dmg ](https://github.com/chris1111/OpenCore-Creator/releases/tag/V9)
 
 #### Move the App to the Applications
 
