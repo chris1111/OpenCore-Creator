@@ -46,7 +46,9 @@
 - Download Xcode [Xcode App Store](https://apps.apple.com/us/app/xcode/id497799835?mt=12) After downloading ➦ Open Xcode at least once
   
 
-#### Clone and Build: `git clone https://github.com/chris1111/OpenCore-Creator.git && cd $HOME/OpenCore-Creator && make`
+#### Clone and Build: 
+
+ `git clone https://github.com/chris1111/OpenCore-Creator.git && cd $HOME/OpenCore-Creator && make`
 
 -------------------------------------------------------
 ### List of kexts: ⬇︎
@@ -87,9 +89,9 @@
 
 -------------------------------------------------------
 
-#### Download Release V9 (Available tonight) ☞ [OpenCore Creator-V9.dmg ](https://github.com/chris1111/OpenCore-Creator/releases/tag/V9)
+#### Download Release V9 ➥ [OpenCore Creator-V9.dmg](https://github.com/chris1111/OpenCore-Creator/releases/tag/V9)
 
-#### Move the App to the Applications
-
+#### Move the App to the Applications 
+- Go to System Settings/Login Items & Extensions then add the app by the + button to make the app at login
 
 
