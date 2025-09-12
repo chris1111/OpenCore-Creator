@@ -1,0 +1,15 @@
+{
+	"CFBundleDevelopmentRegion" = English;
+	CFBundleExecutable = "${EXECUTABLE_NAME}";
+	CFBundleIconFile = "AppIcon.icns";
+	CFBundleIdentifier = "$(PRODUCT_BUNDLE_IDENTIFIER)";
+	"CFBundleInfoDictionaryVersion" = "6.0";
+	CFBundleName = "${PRODUCT_NAME:identifier}";
+	CFBundlePackageType = APPL;
+	"CFBundleShortVersionString" = "1.0";
+	CFBundleSignature = "????";
+	CFBundleVersion = "1.0";
+	LSUIElement = YES;
+	NSMainNibFile = MainMenu;
+	NSPrincipalClass = NSApplication;
+}

@@ -1,0 +1,340 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		3B92A9F90F6ED2CB0023785B /* OpenCoreCreator.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 3B92A9F80F6ED2CB0023785B /* OpenCoreCreator.applescript */; };
+		3BC3FB040ED20C27004AC079 /* AppleScriptObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BC3FB030ED20C27004AC079 /* AppleScriptObjC.framework */; };
+		83CF9F6F2E738CEC00F21921 /* OpenCoreCreator-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83CF9F6E2E738CEC00F21921 /* OpenCoreCreator-Info.plist */; };
+		83CF9F712E738DD200F21921 /* OpenCore-Creator in Resources */ = {isa = PBXBuildFile; fileRef = 83CF9F702E738DD200F21921 /* OpenCore-Creator */; };
+		83CF9FEB2E73918800F21921 /* Package in Resources */ = {isa = PBXBuildFile; fileRef = 83CF9FEA2E73918800F21921 /* Package */; };
+		83CFA0162E7392AD00F21921 /* OpenCorePackage in Resources */ = {isa = PBXBuildFile; fileRef = 83CFA0152E7392AD00F21921 /* OpenCorePackage */; };
+		83E263842D29F3DA00AF94A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83E263832D29F3DA00AF94A8 /* Assets.xcassets */; };
+		83E263862D29F3E000AF94A8 /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 83E263852D29F3E000AF94A8 /* AppIcon.icns */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		9015E6C711585729008B2646 /* Assistant.png in Resources */ = {isa = PBXBuildFile; fileRef = 9015E6C611585729008B2646 /* Assistant.png */; };
+		9060979F1158664A00EE0714 /* Applet.png in Resources */ = {isa = PBXBuildFile; fileRef = 9060979E1158664A00EE0714 /* Applet.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		3B92A9F80F6ED2CB0023785B /* OpenCoreCreator.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = OpenCoreCreator.applescript; sourceTree = "<group>"; };
+		3BC3FB030ED20C27004AC079 /* AppleScriptObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptObjC.framework; path = /System/Library/Frameworks/AppleScriptObjC.framework; sourceTree = "<absolute>"; };
+		83CF9F6D2E738B0000F21921 /* OpenCoreCreator_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCoreCreator_Prefix.pch; sourceTree = "<group>"; };
+		83CF9F6E2E738CEC00F21921 /* OpenCoreCreator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "OpenCoreCreator-Info.plist"; sourceTree = "<group>"; };
+		83CF9F702E738DD200F21921 /* OpenCore-Creator */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "OpenCore-Creator"; sourceTree = "<group>"; };
+		83CF9FEA2E73918800F21921 /* Package */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = Package; sourceTree = "<group>"; };
+		83CFA0152E7392AD00F21921 /* OpenCorePackage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = OpenCorePackage; sourceTree = "<group>"; };
+		83E263832D29F3DA00AF94A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83E263852D29F3E000AF94A8 /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* OpenCore Creator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenCore Creator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9015E6C611585729008B2646 /* Assistant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Assistant.png; sourceTree = "<group>"; };
+		9060979E1158664A00EE0714 /* Applet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Applet.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				3BC3FB040ED20C27004AC079 /* AppleScriptObjC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3B92A9F80F6ED2CB0023785B /* OpenCoreCreator.applescript */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				3BC3FB030ED20C27004AC079 /* AppleScriptObjC.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* OpenCore Creator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* Menu Extra */ = {
+			isa = PBXGroup;
+			children = (
+				83CFA0152E7392AD00F21921 /* OpenCorePackage */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = "Menu Extra";
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				83CF9F6D2E738B0000F21921 /* OpenCoreCreator_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				83CF9F702E738DD200F21921 /* OpenCore-Creator */,
+				83CF9FEA2E73918800F21921 /* Package */,
+				9060979E1158664A00EE0714 /* Applet.png */,
+				9015E6C611585729008B2646 /* Assistant.png */,
+				83CF9F6E2E738CEC00F21921 /* OpenCoreCreator-Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				83E263832D29F3DA00AF94A8 /* Assets.xcassets */,
+				83E263852D29F3E000AF94A8 /* AppIcon.icns */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* OpenCore Creator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "OpenCore Creator" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OpenCore Creator";
+			productInstallPath = "$(HOME)/Applications";
+			productName = "Menu Extra";
+			productReference = 8D1107320486CEB800E47090 /* OpenCore Creator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "OpenCore Creator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				en,
+				zh_CN,
+				es,
+				it,
+				"fr-CA",
+				ko,
+				French,
+				se,
+				ru,
+				pt,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Menu Extra */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* OpenCore Creator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83CFA0162E7392AD00F21921 /* OpenCorePackage in Resources */,
+				83CF9F6F2E738CEC00F21921 /* OpenCoreCreator-Info.plist in Resources */,
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				83CF9FEB2E73918800F21921 /* Package in Resources */,
+				83CF9F712E738DD200F21921 /* OpenCore-Creator in Resources */,
+				83E263862D29F3E000AF94A8 /* AppIcon.icns in Resources */,
+				9015E6C711585729008B2646 /* Assistant.png in Resources */,
+				9060979F1158664A00EE0714 /* Applet.png in Resources */,
+				83E263842D29F3DA00AF94A8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				3B92A9F90F6ED2CB0023785B /* OpenCoreCreator.applescript in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = OpenCoreCreator_Prefix.pch;
+				INFOPLIST_FILE = "OpenCoreCreator-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = com.chris1111.OpenCoreCreator;
+				PRODUCT_NAME = "OpenCore Creator";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "";
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = OpenCoreCreator_Prefix.pch;
+				INFOPLIST_FILE = "OpenCoreCreator-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=macosx*]" = com.chris1111.OpenCoreCreator;
+				PRODUCT_NAME = "OpenCore Creator";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.10;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = macosx10.10;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "OpenCore Creator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "OpenCore Creator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

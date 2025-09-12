@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<installer-script minSpecVersion="1.000000" authoringTool="com.opencorePackage.Productbuild" authoringToolVersion="1.0" authoringToolBuild="100000">
+    <title>OpenCore Package</title>
+    <options customize="never" allow-external-scripts="yes"/>
+    <domains enable_anywhere="true"/>
+    <background file="background" alignment="center" scaling="tofit"/>
+    <background-darkAqua file="background.png" alignment="center" scaling="tofit"/>
+    <welcome file="Welcome.rtf"/>
+    <choices-outline>
+        <line choice="choice1"/>
+    </choices-outline>
+    <choice id="choice1" title="OpenCore Package">
+        <pkg-ref id="com.opencorePackage.opencorePackage.OpenCorePackage.pkg"/>
+    </choice>
+    <pkg-ref id="com.opencorePackage.opencorePackage.OpenCorePackage.pkg" installKBytes="4" version="1.0" auth="Root">#opencorePackage.pkg</pkg-ref>
+</installer-script>

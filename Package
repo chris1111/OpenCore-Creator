@@ -1,0 +1,12 @@
+#!/bin/bash
+# script OpenCore-Package
+PARENTDIR=$(dirname "$0")
+cd "$PARENTDIR"
+echo "OpenCore Package"
+Sleep 1
+rm -rf $HOME/Desktop/OpenCorePackage
+Sleep 2
+cp -rp ./OpenCorePackage $HOME/Desktop/OpenCorePackage
+Sleep 1
+SetFile -a E $HOME/Desktop/OpenCorePackage/OC-Package.command
+Open -R $HOME/Desktop/OpenCorePackage/OC-Package.command
