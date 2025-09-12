@@ -326,19 +326,36 @@ pre code, pre tt {
   <body>
     <div class="container">
       <div class="body-content"><h2 id="opencore-creator">OpenCore-Creator</h2>
-<p><img width="256" src="https://github.com/chris1111/OpenCore-Creator/assets/6248794/0b75e560-797a-45f8-b229-e8aec8c32aa3" alt="icon_512x512"></p>
-<h4 id="latest-update-28-apr-2024-release-v8">Latest Update 28 Apr 2024 Release V8</h4>
+<img width="256" height="256" alt="icon_256x256" src="https://github.com/chris1111/OpenCore-Creator/blob/master/AppIcon.iconset/icon_256x256.png?raw=true" /></li>
+<h4 id="latest-update-12-sept-2025">Latest Update 12 Sept 2025</h4>
 <ul>
-<li>Download then install mandatory binary&#39;s for building OpenCore if not exist.</li>
-<li>Update Icon program</li>
+<li>Add Xcode source AppleScriptObjC Project.</li>
+<li>OpenCore X64 only, IA32 is broken for building in Xcode 16</li>
+<li>Not working Xcode 26</li>
 </ul>
+<h2 id="list-update-">List Update: ⬇︎</h2>
+<details> 
+  <summary>View list Update</summary>
+
+- Update 28 Apr 2024 Release V8. Download then install mandatory binary&#39;s for building OpenCore if not exist. Update Icon program.
+
+- Update 17 February 2024 Add (Option 0) Check OC Version. Fix using any time (Option 5) OpenCore Package
+
+- Update 02 Sept 2023 Build more kexts
+
+- Update 20 Mar 2022 Add OpenCore Creator+Duet-V5, fix Release V5 Open and close command in latest Monterey 12
+
+- Update 12 Mar 2022 add Option 2 and 3 to make OpenCore Update, Option 5 OpenCore Package, Option P Terminal Profiles
+
+</details>
+
 <hr>
 <ul>
 <li>An easy builder of OpenCore (VirtualSMC / Other kext)</li>
 <li>OpenCore is create in ➤  $HOME/Github / OpenCorePkg</li>
 <li>Kexts is create in ➤  $HOME/Github / Build-Kexts</li>
-<li>Works from macOS Catalina 10.15 to macOS Sonoma 14</li>
-<li>OpenCore Package is now Included (Option 5) <a href="https://github.com/chris1111/OpenCore-Package">OpenCore Package</a></li>
+<li>Works from macOS Big Sur 11 to macOS Tahoe 26</li>
+<li>OpenCore Package is now Included Status Menue <a href="https://github.com/chris1111/OpenCore-Package">OpenCore Package</a></li>
 <li>Terminal Profiler is now Included (Option P) <a href="https://github.com/chris1111/Terminal-Profiler">Terminal Profiler</a></li>
 </ul>
 <h4 id="credit-acidanthera-apple">Credit: ☞ <a href="https://github.com/acidanthera">Acidanthera</a>, <a href="https://developer.apple.com/">Apple</a></h4>
@@ -349,12 +366,15 @@ pre code, pre tt {
 </ul>
 <p><code>xcode-select --install</code></p>
 <ul>
+<li>[x] <code>Xcode</code></li>
 <li>Download Xcode <a href="https://apps.apple.com/us/app/xcode/id497799835?mt=12">Xcode App Store</a> After downloading ➦ Open Xcode at least once</li>
 </ul>
-<hr>
+<h4 id="clone-and-build-">Clone and Build:</h4>
+<p><code><small>git clone https://github.com/chris1111/OpenCore-Creator.git &amp;&amp; cd $HOME/OpenCore-Creator &amp;&amp; make</small></code></p>
+
 <h3 id="list-of-kexts-">List of kexts: ⬇︎</h3>
 <details> 
-  <summary>➤ View kexts list Update</summary>
+  <summary>View kexts list Update</summary>
 
 - AirportBrcmFixup.kext
 - AppleALC.kext
@@ -388,12 +408,18 @@ pre code, pre tt {
 </details>
 
 <hr>
-<h4 id="download-release-v8-opencore-creator-v8-dmg-">Download Release V8 ☞ <a href="https://github.com/chris1111/OpenCore-Creator/releases/tag/V8">OpenCore Creator-V8.dmg </a></h4>
-<h4 id="download-release-duet-v8-opencore-creator-duet-v8-dmg-">Download Release Duet-V8 ☞ <a href="https://github.com/chris1111/OpenCore-Creator/releases/tag/Duet-V8">OpenCore Creator+Duet-V8.dmg </a></h4>
-<h4 id="move-the-app-on-desktop">Move the App on Desktop</h4>
-<p><img src="https://github.com/chris1111/OpenCore-Creator/assets/6248794/d753f791-f0c4-4092-a7d7-a3eb7a4c3705" alt="DMG"></p>
-<p><img src="https://github.com/chris1111/OpenCore-Creator/assets/6248794/05255ae1-b3ba-473d-b5b4-600102ee0382" alt="Screenshot1"></p>
-<p><img src="https://github.com/chris1111/OpenCore-Creator/assets/6248794/b3b5f08f-f8cd-464e-b42a-25c9f8bbd216" alt="Screenshot2"></p>
+<h4 id="download-release-v9-opencore-creator-v9-dmg">Download Release V9 ➥ <a href="https://github.com/chris1111/OpenCore-Creator/releases/tag/V9">OpenCore Creator-V9.dmg</a></h4>
+<h4 id="move-the-app-to-the-applications">Move the App to the Applications</h4>
+<ul>
+<li>Go to System Settings/Login Items &amp; Extensions then add the app by the + button to make the app at login
+<img width="479" height="423" alt="Screenshot 2025-09-12 at 5 09 33 PM" src="https://github.com/user-attachments/assets/b7fbc6f9-608b-4384-ab65-1073288d165c" /></li>
+</ul>
+<h4 id="open-opencore-creator-app-from-applications-then-run-it-from-status-menu">Open OpenCore Creator.app from Applications then run it from Status Menu</h4>
+<p><img width="311" height="80" alt="Screenshot 1" src="https://github.com/user-attachments/assets/cec6db7c-ae53-4b88-a16a-3e16d4c4aad8" /></p>
+<h4 id="option-opencore-creator-to-build-opencore">Option OpenCore Creator: to build OpenCore</h4>
+<p><img width="592" height="930" alt="Screenshot 2" src="https://github.com/user-attachments/assets/5997ee69-2891-4f77-acd3-f6fb19e656fb" /></p>
+<h4 id="option-opencore-package-to-create-a-macos-installer-of-opencore">Option OpenCore Package: to create a macOS installer of OpenCore</h4>
+<p><img width="727" height="433" alt="Screenshot 3" src="https://github.com/user-attachments/assets/fd42cf8d-b908-4821-a85f-ca1d24a7d95e" /></p>
 </div>
     </div>
   </body>
