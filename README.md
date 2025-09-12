@@ -46,8 +46,7 @@
 - Download Xcode [Xcode App Store](https://apps.apple.com/us/app/xcode/id497799835?mt=12) After downloading ➦ Open Xcode at least once
   
 
-#### Clone and Build:
-`git clone https://github.com/chris1111/OpenCore-Creator.git && cd $HOME/OpenCore-Creator && make`
+#### Clone and Build: `git clone https://github.com/chris1111/OpenCore-Creator.git && cd $HOME/OpenCore-Creator && make`
 
 -------------------------------------------------------
 ### List of kexts: ⬇︎
