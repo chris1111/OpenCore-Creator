@@ -134,7 +134,7 @@ echo "Build OpenCore"
 Sleep 4
 file="/usr/local/bin/"
 if [[ -f $file/nasm && -f $file/ndisasm && -f $file/iasl && -f $file/mtoc ]]; then
- echo "Binary files exists ! Build Kexts"
+ echo "Binary files exists ! Build OpenCore"
  Sleep 3
 else
  echo "Some binary files are missing"
