@@ -1,5 +1,5 @@
 --
--- OpenCoreCreator.applescript Created by chris1111 on 11-9-25.
+-- OpenCoreCréateur.applescript Created by chris1111 on 11-9-25.
 --  Base on (https://www.sonsothunder.com/devres/revolution/tutorials/StatusMenu.html).
 --
 
@@ -24,7 +24,7 @@ script MenuletAppDelegate
 	
 	on doMenuStuff:sender --  OpenCoreCréateur
         activate me
-		set source to quoted form of POSIX path of (path to resource "OpenCore-Creator")
+		set source to quoted form of POSIX path of (path to resource "OpenCore-Créateur")
 		do shell script "open " & source
 	end doMenuStuff:
 	

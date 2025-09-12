@@ -5,7 +5,7 @@ cd "$PARENTDIR"
 find . -name '.DS_Store' -type f -delete
 
 # shell script Notifications
-osascript -e 'display notification "Installer OpenCorePackage" with title "Create"  sound name "default"'
+osascript -e 'display notification "Installer OpenCorePackage" with title "Créatation"  sound name "default"'
 
 # Delete build if exist
 rm -rf ./OpenCore-Package
@@ -29,7 +29,7 @@ cp -rp ./Resources ./OpenCore-Package/BUILD-PACKAGE/
 
 echo "
 = = = = = = = = = = = = = = = = = = = = = = = = =
-Create the final Packages with productbuild "
+Creation du Packages finale avec productbuild "
 Sleep 3
 
 # Build the final Packages with Productbuild

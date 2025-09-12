@@ -1,5 +1,5 @@
 #!/bin/bash
-# script OpenCore-Creator
+# script OpenCore-Créateur
 # http://hackintosh-montreal.com
 # (c) Copyright 2019 2025 chris1111 
 # Vars
@@ -15,7 +15,7 @@ sleep 1 & PID=$! #Progress Bar
 
 echo "`tput setaf 7``tput sgr0``tput bold``tput setaf 26`
                 **************************************************** 
-                *************     OpenCore Creator    ************** 
+                **************   OpenCore Créateur    ************** 
                 ****************************************************
 `tput sgr0` `tput setaf 7``tput sgr0`"
 echo " "
@@ -39,45 +39,45 @@ clear
 echo "              = = = = = = = = = = = = = = = = = = = = = = = = =  "
 
 tput blink                    
-echo "                        Installer OpenCore Creator" 
+echo "                        Installer OpenCore Créateur" 
 tput sgr0
 
 echo "              = = = = = = = = = = = = = = = = = = = = = = = = =  "
 }
 function menu
 {
-echo "                Welcome  $nameh, Installer OpenCore Creator"
+echo "                Welcome  $nameh, Installer OpenCore Créateur"
 echo " "
 echo "                       `tput setaf 26`
-                         Credit OpenCore Team
-                         Credit Apple"
+                Credit et Remerciement OpenCore Team
+                Credit et Remerciement Apple"
 echo " "
 echo "                        
-                 `tput setaf 7``tput sgr0``tput bold``tput setaf 26`Type: ⬇`tput sgr0` `tput setaf 7``tput sgr0`︎"
+                 `tput setaf 7``tput sgr0``tput bold``tput setaf 26`Taper: ⬇`tput sgr0` `tput setaf 7``tput sgr0`︎"
 echo "               =========================================== "
-echo "                     ✅  0 = `tput setaf 7``tput sgr0``tput bold``tput setaf 26`Check OpenCore version`tput sgr0` `tput setaf 7``tput sgr0`"
+echo "                     ✅  0 = `tput setaf 7``tput sgr0``tput bold``tput setaf 26`Vérifier OpenCore version`tput sgr0` `tput setaf 7``tput sgr0`"
 echo "               =========================================== "
-echo "                     ✅  1 = `tput setaf 7``tput sgr0``tput bold``tput setaf 26`Build OpenCore`tput sgr0` `tput setaf 7``tput sgr0`"
+echo "                     ✅  1 = `tput setaf 7``tput sgr0``tput bold``tput setaf 26`Construire OpenCore`tput sgr0` `tput setaf 7``tput sgr0`"
 echo "               =========================================== "
-echo "                     ✅  2 = `tput setaf 7``tput sgr0``tput bold``tput setaf 26`Check update OpenCore`tput sgr0` `tput setaf 7``tput sgr0`"
+echo "                     ✅  2 = `tput setaf 7``tput sgr0``tput bold``tput setaf 26`Vérifier update OpenCore`tput sgr0` `tput setaf 7``tput sgr0`"
 echo "               =========================================== "
 echo "                     ✅  3 = `tput setaf 7``tput sgr0``tput bold``tput setaf 26`Update OpenCore`tput sgr0` `tput setaf 7``tput sgr0`"
 echo "               =========================================== "
-echo "                     ✅  4 = `tput setaf 7``tput sgr0``tput bold``tput setaf 26`Build Kexts OpenCore`tput sgr0` `tput setaf 7``tput sgr0`"
+echo "                     ✅  4 = `tput setaf 7``tput sgr0``tput bold``tput setaf 26`Construire Kexts OpenCore`tput sgr0` `tput setaf 7``tput sgr0`"
 echo "               =========================================== "
-echo "                     ✅  5 = `tput setaf 7``tput sgr0``tput bold``tput setaf 26`Manuel references OpenCore`tput sgr0` `tput setaf 7``tput sgr0`"
+echo "                     ✅  5 = `tput setaf 7``tput sgr0``tput bold``tput setaf 26`Manuel référence OpenCore`tput sgr0` `tput setaf 7``tput sgr0`"
 echo "               =========================================== "
 echo "                     ✅  P = `tput setaf 7``tput sgr0``tput bold``tput setaf 26`Terminal Profile`tput sgr0` `tput setaf 7``tput sgr0`"  
 echo "               =========================================== "
-echo "                     ✅  V = `tput setaf 7``tput sgr0``tput bold``tput setaf 26`View Commits OpenCore`tput sgr0` `tput setaf 7``tput sgr0`"  
+echo "                     ✅  V = `tput setaf 7``tput sgr0``tput bold``tput setaf 26`Voir Commits OpenCore`tput sgr0` `tput setaf 7``tput sgr0`"  
 echo "               =========================================== "
-echo "                     ❎  X = `tput setaf 7``tput sgr0``tput bold``tput setaf 26`Quit (Exit)`tput sgr0` `tput setaf 7``tput sgr0`" 
+echo "                     ❎  X = `tput setaf 7``tput sgr0``tput bold``tput setaf 26`Quitter (Sortir)`tput sgr0` `tput setaf 7``tput sgr0`" 
 echo "               =========================================== "
 
 echo "              = = = = = = = = = = = = = = = = = = = = = = = = =  "
 
 tput blink                    
-echo "                         Installer OpenCore Creator" 
+echo "                         Installer OpenCore Créateur" 
 tput sgr0
 
 echo "              = = = = = = = = = = = = = = = = = = = = = = = = =  "
@@ -89,7 +89,7 @@ function OPENCOREV
 {
 head
 echo " "
-echo "Check OpenCore version"
+echo "Vérifier OpenCore version"
 Sleep 1
 echo "= = = = = = = = = = = = = = = = = = = = = = = = =  
 OpenCore"
@@ -97,7 +97,7 @@ OpenCore"
 grep OPEN_CORE_VERSION $HOME/Github/OpenCorePkg/Include/Acidanthera/Library/OcMainLib.h | sed 's/.*"\(.*\)".*/\1/' | grep -E '^[0-9.]+$'
 echo "= = = = = = = = = = = = = = = = = = = = = = = = =  "
 
-echo "`tput setaf 7``tput sgr0``tput bold``tput setaf 26`Check OpenCore version.`tput sgr0` `tput setaf 7``tput sgr0`"
+echo "`tput setaf 7``tput sgr0``tput bold``tput setaf 26`Vérifier OpenCore version.`tput sgr0` `tput setaf 7``tput sgr0`"
 echo " "
 }
 function OPENCORE
@@ -105,15 +105,15 @@ function OPENCORE
 head
 echo " "
 response=$(osascript -e 'tell app "System Events" to display dialog "
-Welcome to OpenCore Creator
-This program allows you to build OpenCore.
-You need Xcode and the Command Line Tools installed.
-The output folder will be in
+Bienvenue OpenCore Creator
+Ce programme vous permet de construire OpenCore.
+Vous avez besoin de Xcode et des Command Line tool installée.
+Le dossier de sortie seras dans 
 ➤ $HOME/Github/OpenCorePkg
 
-Works from macOS Big Sur 11 to macOS Tahoe 26
+Fonctionne de macOS Catalina à macOS Sonoma 14
 
-\n\nCancel Quit" buttons {"Cancel","OpenCore"} default button 2 with title "'"$apptitle"' '"$version"'" with icon POSIX file "'"$iconfile"'"  ')
+\n\nCancel Quitter" buttons {"Cancel","OpenCore"} default button 2 with title "'"$apptitle"' '"$version"'" with icon POSIX file "'"$iconfile"'"  ')
 
 answer=$(echo $response | grep "OpenCore")
 
@@ -123,7 +123,7 @@ if [ ! "$answer" ] ; then
 echo "              = = = = = = = = = = = = = = = = = = = = = = = = =  "
 
 tput blink                    
-echo "                      User Cancel OpenCore Creator" 
+echo "                      Utilisateur Cancel OpenCore Créateur" 
 tput sgr0
 
 echo "              = = = = = = = = = = = = = = = = = = = = = = = = =  "
@@ -134,16 +134,16 @@ echo "Build OpenCore"
 Sleep 4
 file="/usr/local/bin/"
 if [[ -f $file/nasm && -f $file/ndisasm && -f $file/iasl && -f $file/mtoc ]]; then
- echo "Binary files exists ! Build OpenCore"
+ echo "Les fichier binaires existe ! Construire OpenCore"
  Sleep 3
 else
- echo "Some binary files are missing"
+ echo "Certains fichier binaires sont manquants"
 echo "
 =======================================
-Some binary files are missing! 🚫
-OpenCore-Creator must download and install the missing binaries.
-Building the kexts must be performed as root.
-Type your password:
+Certains fichier binaires sont manquent! 🚫
+OpenCore-Createur doit téléchargé puis installé les binaires manquants.
+La construction d'OpenCore doit être effectuée en tant que root
+Tapez votre mot de passe:
 ======================================= "
 sudo mkdir -p /usr/local/bin
 pushd /Private/tmp >/dev/null || exit 1
@@ -255,7 +255,7 @@ if [[ -d .git ]]; then
   git pull origin master
   Sleep 2
 else
-  echo "Error: This directory is not a Git repository. Unable to verify update!"
+  echo "Erreur: Ce répertoire n'est pas un Git. Impossible de vérifier la mise à jour!"
 fi
 echo " "
 }
@@ -313,11 +313,11 @@ cd $HOME/Github/OpenCorePkg
 ./build_oc.tool
 Sleep 1
 else
-  echo "Error: This directory is not a Git repository. Unable to verify update!"
+  echo "Erreur: Ce répertoire n'est pas un Git. Impossible de vérifier la mise à jour!"
 fi
 Open $HOME/Github/OpenCorePkg/Binaries
 echo "======================================="
-echo "Update OpenCore Done!  "
+echo "Update OpenCore Terminé!  "
 echo "======================================="
 echo " "
 }
@@ -326,15 +326,15 @@ function KEXTS
 head
 echo " "
 response=$(osascript -e 'tell app "System Events" to display dialog "
-Welcome to OpenCore Creator
-This program allows you to build kexts for OpenCore.
-You need Xcode and the Command Line Tool installed.
-The output folder will be in
+Bienvenue OpenCore Creator
+Ce programme vous permet de construire les kexts pour OpenCore.
+Vous avez besoin de Xcode et des Command Line tool installée.
+Le dossier de sortie seras dans 
 ➤ $HOME/Github/Build-Kexts
 
-Works from macOS Big Sur 11 to macOS Tahoe 26
+Fonctionne de macOS Catalina à macOS Sonoma 14
 
-\n\nCancel Quit" buttons {"Cancel","OpenCore Kexts"} default button 2 with title "'"$apptitle"' '"$version"'" with icon POSIX file "'"$iconfile"'"  ')
+\n\nCancel Quitter" buttons {"Cancel","OpenCore Kexts"} default button 2 with title "'"$apptitle"' '"$version"'" with icon POSIX file "'"$iconfile"'"  ')
 
 answer=$(echo $response | grep "OpenCore Kexts")
 
@@ -344,27 +344,27 @@ if [ ! "$answer" ] ; then
 echo "              = = = = = = = = = = = = = = = = = = = = = = = = =  "
 
 tput blink                    
-echo "                      User Cancel OpenCore Creator" 
+echo "                      Utilisateur Cancel OpenCore Créateur" 
 tput sgr0
 
 echo "              = = = = = = = = = = = = = = = = = = = = = = = = =  "
   exit 0
 fi
 
-echo "Build Kexts"
+echo "Construire les Kexts"
 Sleep 4
 file="/usr/local/bin/"
 if [[ -f $file/nasm && -f $file/ndisasm && -f $file/iasl && -f $file/mtoc ]]; then
- echo "Binary files exists ! Build Kexts"
+ echo "Les fichier binaires existe ! Construire les Kexts"
  Sleep 3
 else
- echo "Some binary files are missing"
+ echo "Certains fichier binaires sont manquants"
 echo "
 =======================================
-Some binary files are missing! 🚫
-OpenCore-Creator must download and install the missing binaries.
-Building the kexts must be performed as root.
-Type your password:
+Certains fichier binaires sont manquent! 🚫
+OpenCore-Createur doit téléchargé puis installé les binaires manquants.
+La construction des Kexts doit être effectuée en tant que root
+Tapez votre mot de passe:
 ======================================= "
 sudo mkdir -p /usr/local/bin
 pushd /Private/tmp >/dev/null || exit 1
@@ -400,12 +400,12 @@ sudo cp -Rp $BIN/ndisasm /usr/local/bin
 sudo cp -Rp $BIN/nasm /usr/local/bin
 sudo cp -Rp $BIN/iasl /usr/local/bin
 sudo cp -Rp $BIN/mtoc /usr/local/bin
-echo "Build Kexts ✅"
+echo "Construire les Kexts ✅"
 Sleep 3
 fi
 
 
-echo "Build Kexts"
+echo "Construire les Kexts"
 
 if [ "/$HOME/Github/Build-Kexts" ]; then
 	rm -rf "/$HOME/Github/Build-Kexts"
@@ -527,7 +527,7 @@ Sleep 1
 tar xf $HOME/Github/Build-Kexts/VirtualSMC/VirtualSMC-*-RELEASE.zip --directory $HOME/Github/Build-Kexts/VirtualSMC/OUT
 echo "
 Build AppleALC
-Please wait! Build AppleALC is taking a long time. . ."
+Patienter! Build AppleALC prend beaucoups de temps. . ."
 Sleep 3
 xcodebuild -project $HOME/Github/Build-Kexts/AppleALC/AppleALC.xcodeproj -alltargets -configuration Release
 Sleep 2
@@ -589,7 +589,7 @@ ls | sort
 find . -name '.DS_Store' -type f -delete
 
 echo "======================================="
-echo "Build Kexts Done!  "
+echo "Build Kexts Terminé!  "
 echo "======================================="
 Sleep 1
 Open $HOME/Github/Build-Kexts/Build
@@ -603,7 +603,7 @@ echo "Manuel OpenCore"
 Sleep 1
 Open $HOME/Github/OpenCorePkg/Docs/Configuration.pdf
 echo " "
-echo "`tput setaf 7``tput sgr0``tput bold``tput setaf 26`Manuel reference OpenCore.`tput sgr0` `tput setaf 7``tput sgr0`"
+echo "`tput setaf 7``tput sgr0``tput bold``tput setaf 26`Manuel référence OpenCore.`tput sgr0` `tput setaf 7``tput sgr0`"
 echo " "
 }
 function PROFILE
@@ -615,11 +615,11 @@ Sleep 1
 
 osascript <<EOD
 
-set Term to choose from list {"Pro", "Homebrew", "Basic", "Grass", "Man Page", "Novel", "Ocean", "Red Sands", "Silver Aerogel", "Solid Colors"} with title "Setup Terminal Profiles" with prompt "Which profiles do you want to use?" default items "Pro" OK button name {"Profiles"} cancel button name {"Cancel"}
+set Term to choose from list {"Pro", "Homebrew", "Basic", "Grass", "Man Page", "Novel", "Ocean", "Red Sands", "Silver Aerogel", "Solid Colors"} with title "Setup Terminal Profiles" with prompt "Quels profils voulez-vous utiliser?" default items "Pro" OK button name {"Profiles"} cancel button name {"Cancel"}
 
 
 if Term is false then
-	display dialog "Quit Terminal Profile" with icon note buttons {"Exit"} default button {"Exit"}
+	display dialog "Quitter Terminal Profile" with icon note buttons {"Exit"} default button {"Exit"}
 	error number -128
 end if
 
@@ -689,8 +689,8 @@ end if
 
 EOD
 
-echo "`tput setaf 7``tput sgr0``tput bold``tput setaf 26`The Terminal Profile will be changed the next time you open OpenCore Creator.
-Click Terminate to exit.`tput sgr0` `tput setaf 7``tput sgr0`"
+echo "`tput setaf 7``tput sgr0``tput bold``tput setaf 26`Le Profile Terminal seras changer a la prochaine ouverture d'OpenCore Créateur.
+Cliquer sur Terminer pour quitter`tput sgr0` `tput setaf 7``tput sgr0`"
 Sleep 2
 
 osascript -e 'tell application "Terminal" to quit'
@@ -704,7 +704,7 @@ echo "Commits OpenCore"
 Sleep 1
 open 'https://github.com/acidanthera/OpenCorePkg/commits/master'
 echo " "
-echo "`tput setaf 7``tput sgr0``tput bold``tput setaf 26`View Commits OpenCore.`tput sgr0` `tput setaf 7``tput sgr0`"
+echo "`tput setaf 7``tput sgr0``tput bold``tput setaf 26`Vérifier Commits OpenCore.`tput sgr0` `tput setaf 7``tput sgr0`"
 echo " "
 }
 function Quit
@@ -712,12 +712,12 @@ function Quit
 clear
 echo " "
 echo "
-Quit Installer OpenCore Creator"
+Quitter Installer OpenCore Créateur"
 osascript -e 'tell app "Terminal" to display dialog "
-Quit OpenCore Creator" with icon file "System:Library:CoreServices:loginwindow.app:Contents:Resources:ShutDown.tiff" buttons {"Exit"} default button 1 with title " OpenCore Creator"'
+Quitter OpenCore Créateur" with icon file "System:Library:CoreServices:loginwindow.app:Contents:Resources:ShutDown.tiff" buttons {"Sortir"} default button 1 with title " OpenCore Créateur"'
 echo " "
-say thanks to using OpenCore Creator!
-osascript -e 'display notification "" with title "Closing OpenCore Creator" subtitle "Thanks to using OpenCore Creator"'
+say Merci d’utiliser OpenCore Créateur!
+osascript -e 'display notification "" with title "Fermeture OpenCore Créateur" subtitle "Merci d’utiliser OpenCore Créateur"'
 echo " "
 
 
@@ -764,7 +764,7 @@ Quit ;;
 echo ""
 esac
 echo
-echob "`tput setaf 7``tput sgr0``tput bold``tput setaf 26`Press a key to return to the menu`tput sgr0` `tput setaf 7``tput sgr0`"
+echob "`tput setaf 7``tput sgr0``tput bold``tput setaf 26`Taper une touche pour revenir au menue`tput sgr0` `tput setaf 7``tput sgr0`"
 echo
 read -n 1 line
 clear

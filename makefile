@@ -1,8 +1,8 @@
-OpenCore Creator:
-	@echo "Building OpenCore Creator..."
-	@$/xcodebuild -project "OpenCore Creator.xcodeproj" -alltargets -configuration Release
+OpenCore Créateur:
+	@echo "Building OpenCore Créateur..."
+	@$/xcodebuild -project "OpenCore Créateur.xcodeproj" -alltargets -configuration Release
 	@$/Open ./build/Release
 
 
-.PHONY: OpenCore Creator clean
+.PHONY: OpenCore Créateur clean
 

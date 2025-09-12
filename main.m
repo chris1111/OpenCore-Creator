@@ -1,6 +1,6 @@
 //
 //  main.m
-//  OpenCoreCreator
+//  OpenCoreCréateur
 //
 //  Created by chris1111 on 11/9/25.
 //

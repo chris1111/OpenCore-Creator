@@ -12,14 +12,14 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customObject id="494" userLabel="OpenCoreCreator App Delegate" customClass="MenuletAppDelegate">
+        <customObject id="494" userLabel="OpenCoreCréateur App Delegate" customClass="MenuletAppDelegate">
             <connections>
                 <outlet property="myMenu" destination="532" id="540"/>
             </connections>
         </customObject>
         <menu id="532">
             <items>
-                <menuItem title="🛠️ OpenCore Creator" id="533">
+                <menuItem title="🛠️ OpenCore Créateur" id="533">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
                         <action selector="doMenuStuff:" target="494" id="539"/>
