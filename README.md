@@ -88,8 +88,7 @@
 
 -------------------------------------------------------
 
-#### Download Release V8 ☞ [OpenCore Creator-V9.dmg ](https://github.com/chris1111/OpenCore-Creator/releases/tag/V9)
-#### Download Release Duet-V8 ☞ [OpenCore Creator+Duet-V8.dmg ](https://github.com/chris1111/OpenCore-Creator/releases/tag/Duet-V8)
+#### Download Release V9 ☞ [OpenCore Creator-V9.dmg ](https://github.com/chris1111/OpenCore-Creator/releases/tag/V9)
 
 #### Move the App to the Applications
 
