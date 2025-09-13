@@ -99,6 +99,7 @@
 <img width="311" height="80" alt="Screenshot 1" src="https://github.com/user-attachments/assets/cec6db7c-ae53-4b88-a16a-3e16d4c4aad8" />
 
 #### Option OpenCore Creator: to build OpenCore
+- Type 1 to build OpenCore
 <img width="592" height="930" alt="Screenshot 2" src="https://github.com/user-attachments/assets/5997ee69-2891-4f77-acd3-f6fb19e656fb" />
 
 #### Option OpenCore Package: to create a macOS installer of OpenCore
