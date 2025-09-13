@@ -2,9 +2,8 @@
 # Restart AlternateImage
 # by chris1111
 # Restart AlternateImage
-if [ -d "/Applications/OpenCore Creator.app" ]; then
-  killall -c "OpenCore Creator" && sleep 0.2 && open /Applications/"OpenCore Creator.app"
+if [ -d "/Applications/OpenCore Créateur.app" ]; then
+  killall -c "OpenCore Créateur" && sleep 0.2 && open /Applications/"OpenCore Créateur.app"
 fi
-
 
 
