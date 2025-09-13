@@ -10,6 +10,7 @@
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		3B92A9F90F6ED2CB0023785B /* OpenCoreCréateur.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 3B92A9F80F6ED2CB0023785B /* OpenCoreCréateur.applescript */; };
 		3BC3FB040ED20C27004AC079 /* AppleScriptObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BC3FB030ED20C27004AC079 /* AppleScriptObjC.framework */; };
+		834B51BB2E7595A900633144 /* AlternateImage in Resources */ = {isa = PBXBuildFile; fileRef = 834B51BA2E7595A900633144 /* AlternateImage */; };
 		83CF9F6F2E738CEC00F21921 /* OpenCoreCréateur-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83CF9F6E2E738CEC00F21921 /* OpenCoreCréateur-Info.plist */; };
 		83CF9F712E738DD200F21921 /* OpenCore-Créateur in Resources */ = {isa = PBXBuildFile; fileRef = 83CF9F702E738DD200F21921 /* OpenCore-Créateur */; };
 		83CF9FEB2E73918800F21921 /* Package in Resources */ = {isa = PBXBuildFile; fileRef = 83CF9FEA2E73918800F21921 /* Package */; };
@@ -33,6 +34,7 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		3B92A9F80F6ED2CB0023785B /* OpenCoreCréateur.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = "OpenCoreCréateur.applescript"; sourceTree = "<group>"; };
 		3BC3FB030ED20C27004AC079 /* AppleScriptObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptObjC.framework; path = /System/Library/Frameworks/AppleScriptObjC.framework; sourceTree = "<absolute>"; };
+		834B51BA2E7595A900633144 /* AlternateImage */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = AlternateImage; sourceTree = "<group>"; };
 		83CF9F6D2E738B0000F21921 /* OpenCoreCréateur_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenCoreCréateur_Prefix.pch"; sourceTree = "<group>"; };
 		83CF9F6E2E738CEC00F21921 /* OpenCoreCréateur-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "OpenCoreCréateur-Info.plist"; sourceTree = "<group>"; };
 		83CF9F702E738DD200F21921 /* OpenCore-Créateur */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "OpenCore-Créateur"; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			children = (
 				83CF9F702E738DD200F21921 /* OpenCore-Créateur */,
 				83CF9FEA2E73918800F21921 /* Package */,
+				834B51BA2E7595A900633144 /* AlternateImage */,
 				9060979E1158664A00EE0714 /* Applet.png */,
 				9015E6C611585729008B2646 /* Assistant.png */,
 				83CF9F6E2E738CEC00F21921 /* OpenCoreCréateur-Info.plist */,
@@ -210,6 +213,7 @@
 				83E263862D29F3E000AF94A8 /* AppIcon.icns in Resources */,
 				9015E6C711585729008B2646 /* Assistant.png in Resources */,
 				9060979F1158664A00EE0714 /* Applet.png in Resources */,
+				834B51BB2E7595A900633144 /* AlternateImage in Resources */,
 				83E263842D29F3DA00AF94A8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

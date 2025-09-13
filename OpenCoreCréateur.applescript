@@ -1,5 +1,5 @@
 --
--- OpenCoreCreÃÅateur.applescript Created by chris1111 on 11-9-25.
+-- OpenCoreCréateur.applescript Created by chris1111 on 11-9-25.
 --  Base on (https://www.sonsothunder.com/devres/revolution/tutorials/StatusMenu.html).
 --
 
@@ -22,18 +22,21 @@ script MenuletAppDelegate
 	property AppletIcon : missing value
 	property AssistantIcon : missing value
 	
-	on doMenuStuff:sender --  OpenCoreCreÃÅateur
-        activate me
-		set source to quoted form of POSIX path of (path to resource "OpenCore-CreÃÅateur")
+	on doMenuStuff:sender --  OpenCoreCréateur
+		activate me
+		set source to quoted form of POSIX path of (path to resource "OpenCore-Créateur")
 		do shell script "open " & source
 	end doMenuStuff:
 	
 	on doSomething:sender --  Package
 		startSpinner()
+		set AlternateImage to quoted form of POSIX path of (path to resource "AlternateImage")
 		set source to quoted form of POSIX path of (path to resource "Package")
 		performSelector_withObject_afterDelay_("stopSpinner", missing value, 2.5)
 		delay 2.5
 		do shell script source
+		delay 0.1
+		do shell script AlternateImage
 	end doSomething:
 	
 	on awakeFromNib()
