@@ -196,42 +196,13 @@ cd $HOME/Github
 Sleep 1
 git clone https://github.com/acidanthera/OpenCorePkg.git
 Sleep 1
+curl -s https://raw.githubusercontent.com/mikebeaton/OpenCorePkg/81ca6f72ac7b22810348939c29a1d029c3e38b70/Patches/0007-ShellPkg-Allow-DEBUG-shell-to-start-with-too-many-fi.patch -o $HOME/Github/OpenCorePkg/Patches/0007-ShellPkg-Allow-DEBUG-shell-to-start-with-too-many-fi.patch
 echo "Build OpenCore Duet"
-Sleep 2
-OLD="(X64 IA32)"
-MYPATH="$HOME/Github/OpenCorePkg/build_duet.tool"
-TFILE="/Private/tmp/out.tmp"
-for f in $MYPATH
-do
-  if [ -f $f -a -r $f ]; then
-   echo "Setup OC duet build ARCHS=X64"
-   sed "s/$OLD/(X64)/g" "$f" > $TFILE && mv $TFILE "$f"
-   Sleep 1
-   chmod 755 $HOME/Github/OpenCorePkg/build_duet.tool
-  else
-   echo "Error: Cannot read $f"
-  fi
-done
 Sleep 1
 cd $HOME/Github/OpenCorePkg
 ./build_duet.tool
 Sleep 1
 echo "Build OpenCore"
-Sleep 2
-OLD="(X64 IA32)"
-MYPATH="$HOME/Github/OpenCorePkg/build_oc.tool"
-TFILE="/Private/tmp/out.tmp"
-for f in $MYPATH
-do
-  if [ -f $f -a -r $f ]; then
-   echo "Setup OC build ARCHS=X64"
-   sed "s/$OLD/(X64)/g" "$f" > $TFILE && mv $TFILE "$f"
-   Sleep 1
-   chmod 755 $HOME/Github/OpenCorePkg/build_oc.tool
-  else
-   echo "Error: Cannot read $f"
-  fi
-done
 Sleep 1
 cd $HOME/Github/OpenCorePkg
 ./build_oc.tool

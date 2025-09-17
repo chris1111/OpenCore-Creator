@@ -2,14 +2,16 @@
 
 <img width="256" alt="icon_512x512" src="https://github.com/chris1111/OpenCore-Creator/blob/master/AppIcon.iconset/icon_512x512.png">
 
-#### Latest Update 12 Sept 2025 
-- Add Xcode source AppleScriptObjC Project.
-- OpenCore X64 only, IA32 is broken for building in Xcode 16
+#### Latest Update 17 Sept 2025 Add Release V10
+- Fix Building IA32. Removed old build setup for OpenCore and updated terminal profile options. Add "Clear Dark"
+- Add patch from Mike Beaton:
 - Not working Xcode 26
 
 ## List Update: ⬇︎
 <details> 
   <summary>View list Update</summary>
+
+- Update 12 Sept 2025 Add Xcode source AppleScriptObjC Project. OpenCore X64 only, IA32 is broken for building in Xcode 16
 
 - Update 28 Apr 2024 Release V8. Download then install mandatory binary's for building OpenCore if not exist. Update Icon program.
 
@@ -46,9 +48,9 @@
 - Download Xcode [Xcode App Store](https://apps.apple.com/us/app/xcode/id497799835?mt=12) After downloading ➦ Open Xcode at least once
   
 
-#### Clone and Build: French branch
+#### Clone and Build: 
 
- `git clone --branch French https://github.com/chris1111/OpenCore-Creator.git && cd $HOME/OpenCore-Creator && make`
+ `git clone https://github.com/chris1111/OpenCore-Creator.git && cd $HOME/OpenCore-Creator && make`
 
 -------------------------------------------------------
 ### List of kexts: ⬇︎
@@ -89,7 +91,7 @@
 
 -------------------------------------------------------
 
-#### Download Release V9 ➥ [OpenCore Creator-V9.dmg](https://github.com/chris1111/OpenCore-Creator/releases/tag/V9)
+#### Download Release V10 ➥ [OpenCore Creator-V10.dmg](https://github.com/chris1111/OpenCore-Creator/releases/tag/V10)
 
 #### Move the App to the Applications 
 - Go to System Settings/Login Items & Extensions then add the app by the + button to make the app at login
@@ -99,6 +101,7 @@
 <img width="311" height="80" alt="Screenshot 1" src="https://github.com/user-attachments/assets/cec6db7c-ae53-4b88-a16a-3e16d4c4aad8" />
 
 #### Option OpenCore Creator: to build OpenCore
+- Type 1 to build OpenCore
 <img width="592" height="930" alt="Screenshot 2" src="https://github.com/user-attachments/assets/5997ee69-2891-4f77-acd3-f6fb19e656fb" />
 
 #### Option OpenCore Package: to create a macOS installer of OpenCore
