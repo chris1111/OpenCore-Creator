@@ -49,8 +49,7 @@
   
 
 #### Clone and Build: French branch
-
- `git clone --branch French https://github.com/chris1111/OpenCore-Creator.git && cd $HOME/OpenCore-Creator && make`
+`git clone --branch French https://github.com/chris1111/OpenCore-Creator.git && cd $HOME/OpenCore-Creator && make`
 
 -------------------------------------------------------
 ### List of kexts: ⬇︎
