@@ -187,6 +187,7 @@ if [ "/$HOME/Github/OpenCorePkg" ]; then
 	rm -rf "/$HOME/Github/OpenCorePkg"
 fi
 
+xcodebuild -version
 sleep 1
 echo "
 Clone Build "
