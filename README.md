@@ -38,7 +38,6 @@
 #### Credit: ☞ [Acidanthera](https://github.com/acidanthera), [Apple](https://developer.apple.com/)
 -------------------------------------------------------
 
-
 #### Prerequisite: Command Line Tools (CLT) for Xcode or [Developer Apple Command Line Tools](https://developer.apple.com/download/all/)
 
 - [x] `Download Command Line tool from terminal`
