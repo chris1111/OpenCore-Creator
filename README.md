@@ -1,4 +1,5 @@
 ## OpenCore-Creator
+[![pages-build-deployment](https://github.com/chris1111/OpenCore-Creator/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/chris1111/OpenCore-Creator/actions/workflows/pages/pages-build-deployment) [![License: MIT](https://github.com/chris1111/OpenCore-Creator/blob/master/Icons/MIT.svg)](https://github.com/chris1111/OpenCore-Creator/blob/master/LICENSE)
 
 <img width="256" alt="icon_512x512" src="https://github.com/chris1111/OpenCore-Creator/blob/master/AppIcon.iconset/icon_512x512.png">
 
