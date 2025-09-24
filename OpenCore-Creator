@@ -197,7 +197,6 @@ cd $HOME/Github
 Sleep 1
 git clone https://github.com/acidanthera/OpenCorePkg.git
 Sleep 1
-curl -s https://raw.githubusercontent.com/mikebeaton/OpenCorePkg/81ca6f72ac7b22810348939c29a1d029c3e38b70/Patches/0007-ShellPkg-Allow-DEBUG-shell-to-start-with-too-many-fi.patch -o $HOME/Github/OpenCorePkg/Patches/0007-ShellPkg-Allow-DEBUG-shell-to-start-with-too-many-fi.patch
 echo "Build OpenCore Duet"
 Sleep 1
 cd $HOME/Github/OpenCorePkg
