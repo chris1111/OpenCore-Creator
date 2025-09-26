@@ -6,7 +6,7 @@
 #### Latest Update 17 Sept 2025 Add Release V10
 - Fix Building IA32. Removed old build setup for OpenCore and updated terminal profile options. Add "Clear Dark"
 - Add patch from Mike Beaton:
-- Not working Xcode 26
+- Now working Xcode 16, Xcode 26
 
 ## List Update: ⬇︎
 <details> 
