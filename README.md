@@ -2,14 +2,16 @@
 
 <img width="256" alt="icon_512x512" src="https://github.com/chris1111/OpenCore-Creator/blob/master/AppIcon.iconset/icon_512x512.png">
 
-#### Latest Update 17 Sept 2025 Add Release V10
-- Fix Building IA32. Removed old build setup for OpenCore and updated terminal profile options. Add "Clear Dark"
-- Add patch from Mike Beaton:
-- Now working Xcode 16, Xcode 26
+#### Latest Update 27 Sept 2025 Add build timestamps
 
 ## List Update: ⬇︎
 <details> 
   <summary>View list Update</summary>
+
+- Update 17 Sept 2025 Add Release V10
+- Fix Building IA32. Removed old build setup for OpenCore and updated terminal profile options. Add "Clear Dark"
+- Add patch from Mike Beaton:
+- Now working Xcode 16, Xcode 26
 
 - Update 12 Sept 2025 Add Xcode source AppleScriptObjC Project. OpenCore X64 only, IA32 is broken for building in Xcode 16
 
@@ -24,6 +26,7 @@
 - Update 12 Mar 2022 add Option 2 and 3 to make OpenCore Update, Option 5 OpenCore Package, Option P Terminal Profiles
  
 </details>
+
 
 -------------------------------------------------------
 
