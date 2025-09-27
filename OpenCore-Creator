@@ -189,6 +189,8 @@ fi
 
 xcodebuild -version
 sleep 1
+current_date_time="`date "+%Y-%m-%d %H:%M:%S"`";
+echo Build Starting $current_date_time;
 echo "
 Clone Build "
 mkdir -p $HOME/Github
@@ -212,6 +214,8 @@ echo "======================================="
 echo "Build OpenCore Done!  "
 echo "======================================="
 echo " "
+current_date_time="`date "+%Y-%m-%d %H:%M:%S"`";
+echo Finishing Build $current_date_time;
 }
 function CHECKUPDATE
 {
@@ -235,6 +239,8 @@ function UPDATE
 head
 echo " "
 echo "OpenCore Update"
+current_date_time="`date "+%Y-%m-%d %H:%M:%S"`";
+echo Update Starting $current_date_time;
 Sleep 2
 echo "[Git Pull OpenCorePkg ⬇︎ ]"
 cd ~/Github/OpenCorePkg
@@ -245,41 +251,11 @@ rm -rf $HOME/Github/OpenCorePkg/Binaries/*.zip
 Sleep 1
 echo "Build OpenCore Duet"
 Sleep 2
-OLD="(X64 IA32)"
-MYPATH="$HOME/Github/OpenCorePkg/build_duet.tool"
-TFILE="/Private/tmp/out.tmp"
-for f in $MYPATH
-do
-  if [ -f $f -a -r $f ]; then
-   echo "Setup OC duet build ARCHS=X64"
-   sed "s/$OLD/(X64)/g" "$f" > $TFILE && mv $TFILE "$f"
-   Sleep 1
-   chmod 755 $HOME/Github/OpenCorePkg/build_duet.tool
-  else
-   echo "Error: Cannot read $f"
-  fi
-done
-Sleep 1
 cd $HOME/Github/OpenCorePkg
 ./build_duet.tool
 Sleep 1
 echo "Build OpenCore"
 Sleep 2
-OLD="(X64 IA32)"
-MYPATH="$HOME/Github/OpenCorePkg/build_oc.tool"
-TFILE="/Private/tmp/out.tmp"
-for f in $MYPATH
-do
-  if [ -f $f -a -r $f ]; then
-   echo "Setup OC build ARCHS=X64"
-   sed "s/$OLD/(X64)/g" "$f" > $TFILE && mv $TFILE "$f"
-   Sleep 1
-   chmod 755 $HOME/Github/OpenCorePkg/build_oc.tool
-  else
-   echo "Error: Cannot read $f"
-  fi
-done
-Sleep 1
 cd $HOME/Github/OpenCorePkg
 ./build_oc.tool
 Sleep 1
@@ -291,6 +267,8 @@ echo "======================================="
 echo "Update OpenCore Done!  "
 echo "======================================="
 echo " "
+current_date_time="`date "+%Y-%m-%d %H:%M:%S"`";
+echo Finishing Update $current_date_time;
 }
 function KEXTS
 {
@@ -381,8 +359,8 @@ echo "Build Kexts"
 if [ "/$HOME/Github/Build-Kexts" ]; then
 	rm -rf "/$HOME/Github/Build-Kexts"
 fi
-
-
+current_date_time="`date "+%Y-%m-%d %H:%M:%S"`";
+echo Build Kexts Starting $current_date_time;
 sleep 1
 echo "
 Clone Build "
@@ -565,6 +543,8 @@ echo "======================================="
 Sleep 1
 Open $HOME/Github/Build-Kexts/Build
 echo " "
+current_date_time="`date "+%Y-%m-%d %H:%M:%S"`";
+echo Finishing Build Kexts $current_date_time;
 }
 function MANUEL
 {
