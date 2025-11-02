@@ -1,5 +1,5 @@
 --
--- OpenCoreCréateur.applescript Created by chris1111 on 11-9-25.
+-- OpenCoreCr√©ateur.applescript Created by chris1111 on 11-9-25.
 --  Base on (https://www.sonsothunder.com/devres/revolution/tutorials/StatusMenu.html).
 --
 
@@ -22,9 +22,9 @@ script MenuletAppDelegate
 	property AppletIcon : missing value
 	property AssistantIcon : missing value
 	
-	on doMenuStuff:sender --  OpenCoreCréateur
+	on doMenuStuff:sender --  OpenCoreCr√©ateur
 		activate me
-		set source to quoted form of POSIX path of (path to resource "OpenCore-Créateur")
+		set source to quoted form of POSIX path of (path to resource "OpenCore-Cr√©ateur")
 		do shell script "open " & source
 	end doMenuStuff:
 	
