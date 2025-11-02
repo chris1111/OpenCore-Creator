@@ -22,7 +22,7 @@ script MenuletAppDelegate
     property AppletIcon : missing value
     property AssistantIcon : missing value
     
-    on doMenuStuff:sender --  OpenCoreCréateur
+    on doMenuStuff:sender --  OpenCoreCreeator
         activate me
         set source to quoted form of POSIX path of (path to resource "OpenCore-Creator")
         do shell script "open " & source
