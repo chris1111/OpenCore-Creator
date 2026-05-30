@@ -512,7 +512,7 @@ rm -rf $HOME/Github/Build-Kexts/WhateverGreen/MacKernelSDK
 rm -rf $HOME/Github/Build-Kexts/RealtekCardReader/MacKernelSDK
 rm -rf $HOME/Github/Build-Kexts/RealtekCardReaderFriend/MacKernelSDK
 rm -rf $HOME/Github/Build-Kexts/MacKernelSDK
-echo "Créatation Build finale "
+echo "Creation Build final "
 Sleep 2
 cp -r $HOME/Github/Build-Kexts/VirtualSMC/OUT/dSYM/* $HOME/Github/Build-Kexts/Build
 cp -r $HOME/Github/Build-Kexts/VirtualSMC/OUT/Kexts/* $HOME/Github/Build-Kexts/Build
